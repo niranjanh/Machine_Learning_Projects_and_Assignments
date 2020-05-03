@@ -1,0 +1,171 @@
+QUESTION 1:
+
+Model Variance
+How do you measure the variance of a model?
+
+ANS:
+
+By measuring how much does the estimates of the model change on the test data, on changing the training data.
+
+Feedback :
+Variance measures how much the model changes with respect to the training data.
+
+________________________________________________________________________________________________________________________________
+
+QUESTION 2:
+
+Training Error
+In principle it is always possible to reduce the training error to zero. 
+
+ANS:
+
+Yes
+
+Feedback :
+You could always make the model memorise the entire training dataset!
+
+________________________________________________________________________________________________________________________________
+
+QUESTION 3:
+
+Regularization
+Regularization is a:
+
+ANS:
+
+Technique which is used to strike a balance between model complexity and model accuracy on training data.
+
+Feedback :
+Regularization does not improve accuracy; it improves the balance between accuracy and complexity.
+
+________________________________________________________________________________________________________________________________
+QUESTION 4:
+
+Simple Models
+Which of the following is incorrect with respect to creating simpler models?
+
+OPTIONS:
+
+A.
+Simpler models are more generic
+
+B.
+Simpler models require less training data
+
+C.
+Simpler models will always have less test error as compared to a complex model
+
+D.
+None of the above
+
+
+ANS:
+
+C.
+Simpler models will always have less test error as compared to a complex model
+
+Feedback :
+Complex models, assuming you have enough training data available, can do a very accurate job of prediction.
+
+________________________________________________________________________________________________________________________________
+
+QUESTION 5:
+
+Simplicity of a model
+How would you quantify the simplicity of a model?
+
+OPTIONS:
+
+A.
+Number of features used in the model
+
+B.
+Number of nodes and depth of tree in case of a tree model
+
+C.
+Training error of the model
+
+D.
+None of the above
+
+ANS:
+
+A.
+Number of features used in the model
+
+Feedback :
+If you use more features in your model, it would become more complex and might even overfit with given data. An overfitted model is not simple enough for prediction purposes.
+
+
+B.
+Number of nodes and depth of tree in case of a tree model
+
+Feedback :
+The number of nodes and tree depth determine how complex the decision tree is. If a decision tree has more number of features, it will have more nodes and hence will be more complicated.
+________________________________________________________________________________________________________________________________
+
+QUESTION 6:
+
+k-fold Cross Validation
+Which of the following statements is correct with respect to k-fold cross validation?
+
+OPTIONS:
+
+A.
+As k increases, training time increases for k-fold cross validation.
+
+B.
+With a higher number of folds, the estimated error is usually lower on an average
+
+C.
+Both A and B
+
+ANS:
+
+C.
+Both A and B
+
+Feedback :
+Training happens k times and higher k would imply higher run time for training with k-fold cross validation. Also, a higher k implies that the training set every time is bigger and is a better representation of the actual data.
+
+________________________________________________________________________________________________________________________________
+
+QUESTION 7:
+
+k-fold Cross Validation
+Which of the following is not correct about k-fold cross validation?
+
+OPTIONS:
+
+A.
+You repeat the cross validation process ‘k’ times.
+
+B.
+Each ‘k’ sample is used as the validation data once.
+
+C.
+You repeat the process k-1 times.
+
+D.
+A model trained with k-fold cross validation will never overfit.
+
+
+ANS:
+
+C.
+You repeat the process k-1 times.
+
+Feedback :
+With k-fold cross validation, training happens k times while each sample is used as validation data at least once.
+
+Correct
+
+D.
+A model trained with k-fold cross validation will never overfit.
+
+Feedback :
+ Overfitting is still possible with cross validation. Cross-validation does not prevent overfitting in itself, but it may help in identifying a case of overfitting.
+
+
+
+________________________________________________________________________________________________________________________________

@@ -1,0 +1,182 @@
+In the attached file, there are three sheets. The first sheet contains three variables (Tenure, Second Contract and Churn) from the telecom data. The second sheet contains the distribution of the binned tenure variable. The third sheet contains the distribution of goods and bad information of the contract variable.
+
+
+QUESTION 1:
+
+Woe Analysis
+What information would you infer from the woe trend of tenure variable?
+
+
+OPTIONS:
+
+A.
+As tenure increases, the chances of churning decrease
+
+B.
+As tenure increases, the chances of churning increase
+
+C.
+As tenure decreases, the chances of churning decrease
+
+ANS:
+
+A.
+As tenure increases, the chances of churning decrease
+
+Feedback :
+If you calculate woe value of all the 10 buckets, you would notice, as tenure increases from 1 year to 72 years, woe values are also increasing continuously from -1.46 to 2.12. Thus it results in decreasing the chances of churning over the bucket.
+
+Correct
+
+
+
+________________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+Woe Analysis
+Choose the correct option:
+
+OPTIONS:
+
+A.
+Coarse binning is required for tenure variable as there is no monotonic trend in fine binning
+
+B.
+Coarse binning is not required for tenure variable as there is a clear monotonic trend in fine 
+
+ANS:
+
+Coarse binning is not required for tenure variable as there is a clear monotonic trend in fine binning
+Feedback :
+If you create a plot out of woe value, you can clearly visualise a monotonic plot.
+
+
+________________________________________________________________________________________________________________
+
+
+QUESTION 3:
+
+Woe Analysis
+What does negative woe signify in 'contract' variable (refer sheet-3)?
+
+OPTIONS:
+
+A.
+% of churners (bad customers) are more than % of no-churners (good customers)
+
+B.
+% of churners (bad customers) are less than % of no-churners (good customers)
+
+C.
+% of churners (bad customers) are equal to the % of no-churners (good customers)
+
+D.
+Can’t say any
+
+
+
+ANS:
+
+A.
+% of churners (bad customers) are more than % of no-churners (good customers)
+
+Feedback :
+The woe is expressed by ln (percentage of non-churns in bucket/ percentage of churns in the bucket). If the woe is negative, it means the percentage of churns in that bucket is greater than the percentage of non-churns in that bucket.
+
+Correct
+
+
+________________________________________________________________________________________________________________
+
+
+QUESTION 4:
+
+Woe Analysis
+Compare the woe trends of both variables (tenure and contract).
+
+Based on the woe trend, which variable when increased in value, will decrease the likelihood of churn?
+
+OPTIONS:
+
+A.
+Tenure
+
+B.
+Contract
+
+C.
+Both
+
+D.
+None of these
+
+
+ANS:
+
+C.
+Both
+Feedback :
+“Tenure”, as well as “Contract” both, negatively impacts churns rate over the bucket. It means that if the tenure increases, churn rate decreases and vice-versa. Similarly for contract variable as well, the two-year contract has the low chance of churn than one year of the contract.
+Correct
+________________________________________________________________________________________________________________
+
+
+QUESTION 5:
+
+Information Value
+What is the total information value of both the variables?
+
+
+ANS:
+
+Contract = 1.24 , Tenure = 0.83
+Feedback :
+Information Value for each bucket can be calculated as: 
+IVbucket = WOEbucket * (% good - % bad ) 
+
+Total IV for Tenure = IVbucket-1(0-1) + IVbucket-2(2-5) + IVbucket-3(6-11)+IVbucket-4(12-19) + IVbucket-5(20-28) + IVbucket-1(29-39) + IVbucket-2(40-49) + IVbucket-3(50-59)+IVbucket-4(60-68) + IVbucket-5(69-72) 
+
+Total IV for Tenure 
+
+= 0.23+0.12+0.02+0.01+0.00+0.01+0.02+0.05+0.12+0.26 
+
+= 0.83 
+
+Total IV for Contract = IVbucket-1(month-to-month) + IVbucket-2(One-year) + IVbucket-3(two-year) Total IV for Contract = 0.33+0.17+0.74 
+= 1.24
+
+
+________________________________________________________________________________________________________________
+
+QUESTION 6:
+
+Information Value
+Choose the correct option?
+
+OPTIONS:
+
+A.
+Contract variable has stronger predictive power than tenure
+
+B.
+Contract variable has weaker predictive power than tenure
+
+C.
+Both variables show the same predictive power
+
+D.
+Can’t say anything
+
+ANS:
+
+A.
+Contract variable has stronger predictive power than tenure
+Feedback :
+Predictive power can be measured based on information values, higher the information value, higher the predictive power. In this example as well, Contract variable shows IV of 1.24 and Tenure variable shows IV of 0.83
+
+
+________________________________________________________________________________________________________________
+
+

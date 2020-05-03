@@ -1,0 +1,106 @@
+QUESTION 1:
+
+Overfitting
+State True or False:
+
+Overfitting leads to a very high value of R-squared, which is misleading since the model is not actually a good predictor.
+
+
+ANS:
+
+True
+
+Feedback :
+Overfitting causes the model to almost memorize the data. This reduces the distance between predicted and actual values in the training set. However, this could make the model less accurate on new data, i.e., the model memorises the data instead of recognizing the pattern that the data is following.
+_______________________________________________________________________________________________________________________________
+
+QUESTION 2:
+
+R-squared
+Which of the following will help you in effectively comparing models (built on the same dataset) with different numbers of features?
+
+
+ANS:
+
+R-squared-adjusted
+
+Feedback :
+This will take number of features into account and give you a fair idea of how many features the model should have.
+_______________________________________________________________________________________________________________________________
+
+
+QUESTION 3:
+
+Overfitting
+Assume that a model has zero training error. i.e. it has completely memorised the training data(a case of overfitting). Which of the following statements is definitely true in this case:
+
+OPTIONS:
+
+A.
+The prediction error on the test set cannot be zero
+
+B.
+The prediction error on the test set will always be very high
+
+C.
+None of the above
+
+
+ANS:
+
+B.    Incorrect
+The prediction error on the test set will always be very high
+
+Feedback :
+ If the training data is an accurate representation of the test data and there is minimal noise in the training data, it is possible to have low prediction error on the test set even after overfitting your model.
+
+
+
+C.    Correct
+None of the above
+
+Feedback :
+Due to overfitting, it is highly likely that you will have high prediction error on the test set. This would be the case more often than not. But there can be exceptions hence such a statement cannot be made for sure. 
+_______________________________________________________________________________________________________________________________
+
+
+QUESTION 4:
+
+Imputing categorical variables
+Consider the following dataset:
+
+   	sepal-length  sepal-width  petal-length  petal-width        class
+0           5.1          3.5           1.4          0.2  	Iris-setosa
+1           4.9          3.0           1.4          0.2  	Iris-setosa
+2           4.7          3.2           1.3          0.2  	Iris-setosa
+3           4.6          3.1           1.5          0.2  	Iris-setosa
+4           5.0          3.6           1.4          0.2  	Iris-setosa
+
+Consider that the categorical column/variable has missing values, which metric would you impute the missing values with?
+
+OPTIONS:
+
+A.
+Mean
+
+B.
+Median
+
+C.
+Mode
+
+
+ANS:
+
+C.
+Mode
+
+Feedback :
+Categorical values are generally imputed with the mode as it represents the value that is the most common for the given column. 
+
+_______________________________________________________________________________________________________________________________
+
+
+
+
+

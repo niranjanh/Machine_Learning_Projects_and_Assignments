@@ -1,0 +1,73 @@
+QUESTION 1:
+
+R-squared Values
+Suppose you built a model with some features. Now you go and add another variable to the model. Which of the following statements would be true? (More than one option may be correct)
+
+
+ANS:
+
+B.
+The R-squared value will either increase or remain the same
+
+Feedback :
+Correct! The R-squared value always increases or remains the same with the addition of variables. It can never happen that an additional variable, no matter how insignificant it may be, will decrease the value of R-squared.
+
+
+C.
+The Adjusted R-squared value may increase or decrease
+
+Feedback :
+Correct! The key idea behind Adjusted R-squared is that it penalises models for having more number of variables. Thus, if the value increases on the addition of a variable, we may conclude that that variable is significant and vice-versa.
+
+
+
+
+
+QUESTION 2:
+
+Overfitting
+Overfitting is more probable when:
+
+ANS:
+
+Number of data points are less
+
+Feedback :
+Correct! Overfitting is the condition wherein the model is so complex that it ends up memorising almost all the data points on the train set. Hence, this condition is more probable if the number of data points is less since the model passing through almost every point becomes easier.
+
+
+
+QUESTION 3:
+
+VIF
+VIF is a measure of:
+
+ANS:
+
+How well a predictor variable is correlated with all the other variables, excluding the target variable
+
+Feedback :
+VIF measures how well a predictor variable can be predicted using all other predictor variables
+
+
+
+
+QUESTION 4:
+
+Calculating VIF
+Suppose you were predicting the sales of a company using two variables 'Social Media Marketing' and 'TV Marketing'. You found out that the correlation between 'Social Media Marketing' and 'TV Marketing' is 0.9. What will be the approximate value of VIF for either of them?
+
+ANS:
+
+5.26
+
+Feedback :
+Correct! The formula for VIF is given by:
+
+VIF = 1/(1−Ri^2)
+Here, the R-squared variable will simply be the correlation coefficient squared since we have only 2 variables. Hence, you have:
+
+VIF = 1/(1−0.92)
+≈ 5.26
+
+

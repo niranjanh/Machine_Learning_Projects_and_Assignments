@@ -1,0 +1,310 @@
+
+Doc.No.		Document					Class
+
+0		Coffee Tea  Soup Coffee Coffee			Hot
+
+1		Coffee is hot and so is Soup  and Tea		Hot
+
+2		Espresso is a hot Coffee  and not a Tea		Hot
+
+3		Coffee is neither Tea nor Soup			Hot
+
+4		Sprite Pepsi  Cold Coffee and cold Tea		Cold
+
+
+
+
+Consider the set of documents tabulated below. There are 5 training documents. Answer following questions based on this table. Documents have been indexed starting from 0 to match the indexing style of python.
+
+_________________________________________________________________________________________________________________________________
+
+QUESTION 1:
+
+Dictionary
+How many words will be there in the dictionary vector without stop words?
+
+ANS:
+
+8
+
+Feedback :
+
+We will have following 8 words in the dictionary vector 
+
+'coffee', 'cold', 'espresso', 'hot', 'pepsi', 'soup', 'sprite', 'tea'
+
+__________________________________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+Feature Vector
+What will be the feature vector after transforming the document:
+
+“Coffee is neither Tea nor Soup”  look like?
+
+The words in the dictionary are ordered in the way shown below :
+
+coffee	 cold	espresso   hot	 pepsi	 soup	 sprite	 tea
+
+ANS:
+
+1 0 0 0 0 1 0 1
+
+Feedback :
+The three words present in the document are Coffee, Tea and soup one time each and that's what is represented . Hence, it is correct.
+____________________________________________________________________________________________________________________
+
+QUESTION 3:
+
+Feature Vector
+What will be the feature vector after transforming the document:
+
+“I hate cold Coffee but love Tea and hot Coffee”  look like?
+
+The words in the dictionary are ordered in the way shown below :
+
+coffee	 cold	espresso   hot	 pepsi	 soup	 sprite	 tea
+
+ANS:
+
+2 1 0 1 0 0 0 1
+
+Feedback :
+Coffee is present twice in the document along with cold, hot and tea present once each. Hence the option is correct.
+
+__________________________________________________________________________________________________________________________________
+
+
+QUESTION 4:
+
+Prior Probability
+We have been asked to classify a new document whose content is not yet disclosed. What most likely will its class be?
+
+ANS:
+
+Hot
+
+Feedback :
+In absence of the extra information we look at the prior. The prior probability of a document being of class Hot is ⅘ i.e 80%. Because 4 documents in the corpus of 5 documents belong to the Hot class
+
+__________________________________________________________________________________________________________________________________
+
+
+QUESTION 5:
+
+Conditional Probability
+What is the probability of word “Coffee” appearing in a document which has been classified as "Hot" if we are planning to do a Multinomial Naive Bayes Classification?
+
+ANS:
+
+6/16
+
+Feedback :
+Word Coffee appears 6 times in all documents of class hot ( d0 : 3 , d1:1, d2:1 and d3:1 ) and there are 16 words altogether in the hot class of documents( d0 : 5 , d1: 4 , d2: 4 and d3: 3). Hence the probability of word Coffee in class hot is 6/16.
+
+__________________________________________________________________________________________________________________________________
+
+QUESTION 6:
+
+Bernoulli NB
+What is Binarization of a feature vector?
+
+ANS:
+
+Converting all non-zero word count of a feature vector to 1 and leaving zero counts as it is
+
+Feedback :
+Self-explanatory.
+
+__________________________________________________________________________________________________________________________________
+
+
+QUESTION 7:
+
+Bernoulli NB
+What is Binarized feature vector for the document  “ I hate cold Coffee but love Tea and hot Coffee”?
+
+coffee	 cold	espresso   hot	 pepsi	 soup	 sprite	 tea
+
+ANS:
+
+1 1 0 1 0 0 0 1
+
+Feedback :
+Multinomial feature vector for the given document against our original dictionary is
+
+coffee	 cold	espresso   hot	 pepsi	 soup	 sprite	 tea
+
+2	 1	0	   1	  0	  0	  0	  1
+
+We convert all non-zero entries to 1 to make it a binarized feature vector in case of Bernoulli Naive Bayes. Binarized feature vector only represents the presence or absence of a word in the document.
+
+__________________________________________________________________________________________________________________________________
+
+
+QUESTION 8:
+
+Likelihood
+What is the correct expression for the likelihood of document  “Coffee and Tea” for the “Hot” class if we are planning to do a Multinomial Naive Bayes Classification?
+
+ANS:
+
+P(Coffee | Hot) *  P(Tea| Hot)
+
+Feedback :
+Probability of all the words of the document which are present in the dictionary are multiplied ignoring words which are not present in the dictionary. Here “and” is ignored as it is not part of the dictionary as it is a stop word.
+
+__________________________________________________________________________________________________________________________________
+
+
+QUESTION 9:
+
+Likelihood
+What is the value of Likelihood of document  “Coffee and Tea” for the “Cold” class if we are planning to do a Multinomial Naive Bayes Classification?
+
+ANS:
+
+1/6  * 1/6
+
+Feedback :
+Word Coffee appears 1 time in all documents of class cold ( d4 : 1  ) and there are 6 words altogether in cold class of documents( d4 : 6). Hence probability of word Coffee in class clod is 1/6.Similarly P(Tea|Cold) = 1/6 . Therefore the likelihood of the document is 1/6 * 1/6
+__________________________________________________________________________________________________________________________________
+
+
+
+Consider a naive Bayes model based on the above training documents with the classes Hot and Cold and the following conditional probability table of the words given a class:
+
+Word		P(word | Hot)	P(word | Cold)
+
+Coffee		6/16		1/6
+
+cold		0		2/6
+
+espresso	1/16		0
+
+hot		P		0
+
+pepsi		0		Q
+
+soup		3/16		0
+
+sprite		R		1/6
+
+tea		4/16		1/6
+
+Based on the above table answer the following :
+
+______________________________________________________________________________________________________________________________
+
+QUESTION 1:
+
+Conditional Probability
+
+Few conditional probabilities  have been left blank and marked as P , Q and R. What is a possible combination of P, Q and R?
+
+Apart from the above table also keep in mind the original set of training document table :
+
+
+ANS:
+
+P= 2/16 , Q= 1/6  and R= 0
+
+Feedback :
+Hot word appears twice in Hot class, sprite word doesn't occur even once and pepsi appears once in cold class.
+
+________________________________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+Likelihood
+What is the value of P(“ I love tea and coffee”|Hot)? Use the table given above to calculate.
+
+ANS:
+
+
+4/16 * 6/16
+
+Feedback :
+ 
+P(“ I love tea and coffee”|Hot)  = P(tea|hot)*P(coffee|hot) using Naive Bayes Theorem.
+
+________________________________________________________________________________________________________________________________
+
+
+
+While trying to calculate the likelihood of a test document for a given class, it is possible that there exist certain words which although are a part of the dictionary but don't appear in the training documents of that class like the word pepsi does not appear in documents of hot class. Then, the probability of that word for that class becomes zero ( P(pepsi|hot) =0 )  and it makes the complete likelihood term zero. This is called the zero-probability problem.
+
+
+To counter this problem, a ‘1’ is added to the total of every word count of all the words of the dictionary for that class. This increases the total word count for that class by the length of the dictionary. This technique is called Laplace Smoothing. After applying Laplace Smoothing, the updated table shown before will look like as follows -
+
+
+Word		Word Count|Hot		P(word | Hot)		Word Count|Cold		P(word|Cold)
+		Actual +1					Actual +1
+
+
+Coffee		6 +1			(6+1)/(16+8)		1+1			(1+1)/(6+8)
+
+cold		0+1			(0+1)/(16+8)		2+1			(2+1)/(6+8)
+
+espresso	1+1			(1+1)/(16+8)		0+1			(0+1)/(6+8)
+
+hot		2+1			(2+1)/(16+8)		0+1			(0+1)/(6+8)
+
+pepsi		0+1			(0+1)/(16+8)		1+1			(1+1)/(6+8)
+
+soup		3+1			(3+1)/(16+8)		0+1			(0+1)/(6+8)
+
+sprite		0+1			(0+1)/(16+8)		1+1			(1+1)/(6+8)
+
+tea		4+1			(4+1)/(16+8)		1+1			(1+1)/(6+8)
+
+ 
+
+Based on the table above answer following questions :
+
+_________________________________________________________________________________________________________________________________
+
+QUESTION 1:
+
+Likelihood
+What is the value of P(“ I love cold coffee”|Hot)?
+
+ANS:
+
+1/24 * 7/24
+
+Feedback :
+P(“ I love cold coffee”|Hot)  = P(cold|hot)*P(coffee|hot) using Naive Bayes Theorem. As P(cold|hot) =1/24 and P(coffee|hot)=7/24 the net product would be  1/24 * 7/24
+
+_________________________________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+Posterior Probability
+What is the most likely class for the document “cold tea”  based on the likelihood terms only (i.e. assume equal priors for both the classes)
+
+ANS:
+
+Cold
+
+Feedback :
+P(cold tea | cold) > P(cold tea | Hot)
+
+_________________________________________________________________________________________________________________________________
+
+QUESTION 3:
+
+Posterior Probability
+Compute the most likely class for the document “cold tea”  based on likelihood and prior of the classes. Assume a naive Bayes classifier and use add-1 smoothing for the likelihoods. Its class should be
+
+ANS:
+
+Hot
+
+Feedback :
+P(cold tea | cold)*P(cold) < P(cold tea | Hot)*P(Hot)
+
+_________________________________________________________________________________________________________________________________

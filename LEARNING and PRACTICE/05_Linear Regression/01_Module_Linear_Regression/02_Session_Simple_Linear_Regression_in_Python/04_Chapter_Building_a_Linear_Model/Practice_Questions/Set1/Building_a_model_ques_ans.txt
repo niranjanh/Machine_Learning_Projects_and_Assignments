@@ -1,0 +1,62 @@
+QUESTION 1:
+
+Viewing the coefficients
+Which of the following commands can be used to view 
+β0 and β1 
+once you have fitted the line using statsmodels? The name of your linear regression object is lr. (More than one option(s) may be correct.)
+
+
+ANS:
+
+1. lr.params
+
+Feedback :
+Yes! You can view both the parameters using this simple command.
+
+
+2. lr .summary()
+
+Feedback :
+The summary() function also output the values of coefficients and hence, can be used to view these values as well.
+
+
+
+QUESTION 2:
+
+Looking at the following summary statistic, what can be said about the significance of the overall model fit?
+
+ANS:
+
+The overall model fit is significant
+
+Feedback :
+Correct! If you look at the summary statistics, you can see that the F-statistic has a value of 270.2 which is a very high value and this, the Prob(F-statistic) is 5.93e-56 (as shown in the table) which is a practically zero value. Hence, the value of less than 0.05 which means that the overall model fit is significant.
+
+
+QUESTION 3:
+
+What can you say about the significance of the coefficient the variable 'Frequency'?
+
+ANS:
+
+The p-value of the coefficient for frequency is low and hence, it is significant.
+
+Feedback :
+Correct! If you look at the table, you can see that the p-value for the coefficient of the variable 'Frequency' is 0 which is a low value and hence, the coefficient is significant.
+
+
+
+QUESTION 4:
+
+Finally, looking at the following summary statistics, what can you say about the extent of fit, i.e. the variance explanatory power of the model?
+
+
+ANS:
+
+
+The R-squared value is low and hence, the model doesn't explain much of the variance.
+
+Feedback :
+Correct! Look at the summary statistics closely. The value of R-squared is 0.153. Recall that R-squared varies from 0 to 1 wherein a value of 0 implies that none of the variance in the data is explained and a value of 1 implies that all of the variance in the data is explained. Can you answer the question now? Hence, a value of 0.153 is a low value of R-squared which in turn implies that the model doesn't explain much variance present in the data.
+
+

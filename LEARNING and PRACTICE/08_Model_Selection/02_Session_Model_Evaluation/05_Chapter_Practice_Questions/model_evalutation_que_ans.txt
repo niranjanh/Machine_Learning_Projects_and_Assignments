@@ -1,0 +1,120 @@
+QUESTION 1:
+
+Training
+Why should we have disjoint training and test datasets? i.e. model should not be tested with data it is trained on.
+
+ANS:
+
+When we test a model build with the training set, on the test set, after the metrics, if we decide to retrain the model, the model already had snick pick at test set, so that would be unfair and we still won't be sure about its performance on unseen data when deployed on prod.
+
+So we divide train set into validation set, and use techniques such as KFold validation.
+
+SUGGESTED ANS:
+
+Any model has to be tested on how well it would work in the proverbial ‘real’ world. Because once a model has seen the data, it can pretty much attempt to ‘memorise’ it and once that is done, testing it on the same dataset will not help in determining its performance on unseen data. In an ideal scenario, when we have plenty of data, we should divide the data into three sets. First would be the training data. On which we shall train the model. . Second would be the validation data. On which we shall test the model and tune the hyperparameters. Third would be the test data, which we shall use for assessing our model.
+
+_______________________________________________________________________________________________________________________________
+
+QUESTION 2:
+
+Variance
+Which of the following is more likely to have low variance?
+
+OPTIONS:
+
+A. Weak Learner
+
+
+B. Strong Learner
+
+ANS:
+
+A.
+Weak Learner
+
+Feedback :
+Weak learners create simpler models which have lower variance. They are not able to model complex relationships and hence create a more generic model.
+
+
+_______________________________________________________________________________________________________________________________
+
+QUESTION 3:
+
+Bias-Variance
+Given two linear regression models on the same dataset with 100 attributes, model A has ten attributes while the model B ninety attributes, what can you say about the two models?
+
+OPTIONS:
+
+A.
+Model B has tried to memorize the data and when the training data changes a little, the expected results will change.
+
+B.
+The model A will have a much higher variance compared to model B.
+
+C.
+The model B will have a much higher variance compared to model A.
+
+D.
+Model A will have a higher bias
+
+E.
+Model B will have a higher bias
+
+
+ANS:
+
+A.
+Model B has tried to memorize the data and when the training data changes a little, the expected results will change.
+
+Feedback :
+Model B has too many attributes and probably is overfitted.
+
+C.
+The model B will have a much higher variance compared to model A.
+
+Feedback :
+Model B is memorising the data or overfitting and hence would have a higher variance.
+
+D.
+Model A will have a higher bias
+
+Feedback :
+Model A has made a lot of assumptions about the data to keep the model simple leading to high bias.
+_______________________________________________________________________________________________________________________________
+
+
+QUESTION 4:
+
+Bias-Variance
+Consider that data is generated via a polynomial equation of degree 4 (i.e. the said polynomial equation will perfectly fit the given data). Which of the following statements are correct in this case?
+
+OPTIONS:
+
+A.
+Linear regression will have high bias and low variance
+
+B.
+Linear regression will have low bias and high variance
+
+C.
+Polynomial equation of degree 4 will have low bias and high variance
+
+D.
+Polynomial equation of degree 4 will have low bias and Low variance
+
+ANS:
+
+A.
+Linear regression will have high bias and low variance
+
+Feedback :
+Linear regression would create a degree 1 polynomial which would be less complex than the degree four polynomial and hence would have a higher bias. Since the model is less complex and won’t overfit, it would have a low variance.
+
+D.
+Polynomial equation of degree 4 will have low bias and Low variance
+
+Feedback :
+Since the equation fits the data perfectly, bias and variance will both be low here.
+
+
+_______________________________________________________________________________________________________________________________

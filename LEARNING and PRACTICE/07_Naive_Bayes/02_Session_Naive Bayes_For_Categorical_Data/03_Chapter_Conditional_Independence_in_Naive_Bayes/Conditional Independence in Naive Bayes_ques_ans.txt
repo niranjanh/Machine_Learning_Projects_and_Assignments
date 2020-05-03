@@ -1,0 +1,140 @@
+Comprehension - Naive Bayes with Multiple Features
+
+Table 2: Mushroom Dataset
+S.No	Type of Mushroom	Cap.shape	Cap.surface
+1.	Poisonous		Convex		Scaly
+2.	Edible			Convex		Scaly
+3.	Poisonous		Convex		Smooth
+4.	Edible			Convex		Smooth
+5.	Edible			Convex		Fibrous
+6.	Poisonous		Convex		Scaly
+7.	Edible			Bell		Scaly
+8.	Edible			Bell		Scaly
+9.	Edible			Convex		Scaly
+10.	Poisonous		Convex		Scaly
+11.	Edible			Flat 		Scaly
+12.	Edible			Bell		Smooth
+ 
+
+Refer to the table above for the questions that follow. The first two columns are same as before. The third column is cap.surface - it is the second, newly added feature. The task is to predict the Type.of.mushroom given its two features.
+
+ 
+
+In the multivariate case, the feature X is written as X = (cap.shape, cap.surface). Let us say if you take a mushroom having cap.shape = CONVEX and cap.surface =  SCALY, the probability of it being edible is expressed as:
+
+ 
+
+P(C = edible | X = CONVEX, SCALY)
+
+= P(X = CONVEX, SCALY | C = edible) \times P(edible) / P(X = CONVEX, SCALY)
+
+ 
+
+You can similarly write the expression for P(C = poisonous | X = CONVEX, SCALY) and compare that with P(C = edible | X = CONVEX, SCALY) and conclude the result. Recall that you do not need to calculate the denominator because it is same for both the edible and the poisonous class.
+
+ 
+
+Useful numbers:
+
+Number of edible mushrooms = 8
+
+Number of poisonous mushrooms = 4
+
+_____________________________________________________________________________________________________________________________
+
+QUESTION 1:
+
+Calculating conditional probability
+Say you take a new mushroom which is (CONVEX, SMOOTH). What is the numerator of P(C = edible | X = CONVEX, SMOOTH)?
+
+ANS:
+
+P(edible) x P(CONVEX | edible) x P(SMOOTH| edible)
+_____________________________________________________________________________________________________________________________
+
+QUESTION 2:
+
+Calculating conditional probability
+What is P(CONVEX | edible)?
+
+ANS:
+
+4/8
+_____________________________________________________________________________________________________________________________
+
+QUESTION 3:
+
+Calculating conditional probability
+What is P(SMOOTH| edible)?
+
+ANS:
+
+2/8
+Feedback :
+Out of the 8 edible mushrooms, 2 are smooth
+_____________________________________________________________________________________________________________________________
+
+QUESTION 4:
+
+Calculating conditional probability
+What is P(CONVEX | poisonous)?
+
+ANS:
+
+1
+Feedback :
+Out of 4 poisonous mushrooms, all 4 are CONVEX.
+_____________________________________________________________________________________________________________________________
+
+QUESTION 5:
+
+Calculating conditional probability
+What is P(SMOOTH| poisonous)?
+
+ANS:
+
+
+1/4
+Feedback :
+Out of 4 poisonous mushrooms, 1 is SMOOTH.
+_____________________________________________________________________________________________________________________________
+
+QUESTION 6:
+
+Classifying a mushroom
+In the previous questions, you have calculated that:
+
+What is P(CONVEX | edible) = 4/8
+
+P(SMOOTH| edible) = 2/8
+
+P(CONVEX | poisonous) = 1 and
+
+P(SMOOTH| poisonous) = 1/4
+
+
+If all mushrooms above 50% probability of being edible are classified as edible, is the CONVEX, SMOOTH mushroom edible?
+
+OPTIONS:
+
+A.  YES
+
+B.  NO
+
+C.  Cannot be decided, it is a tie
+
+ANS:
+
+C.
+Cannot be decided, it is a tie
+
+Feedback :
+P(edible | CONVEX, SMOOTH) = P(edible).P(CONVEX | edible).P(SMOOTH| edible)/denominator = (8/12)(4/8)(2/8)/d = 1/12d
+
+P(poisonous | CONVEX, SMOOTH) = P(poisonous).P(CONVEX | poisonous). P(SMOOTH| poisonous)/denominator = (4/12)(1)(1/4)/d = 1/12d.
+
+Since both numerators are equal to 1/12d, this mushroom cannot be classified with a 50% threshold. Although if you would take a higher threshold, like 60% (which is reasonable since you don't want to take responsibility of people eating poisonous mushrooms), then it will be classified as poisonous. Why? Because, when you set the threshold as 60%, you want the probability of edible|CONVEX,SMOOTH to atleast 60%.
+
+
+
+

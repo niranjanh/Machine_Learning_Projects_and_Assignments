@@ -1,0 +1,50 @@
+QUESTION 1:
+
+R-squared
+In the simple linear regression model between TV and sales, the accuracy, or the 'model fit', as measured by R-squared was about 0.81. But, when you brought in the radio and the newspaper variables along with TV, the R-squared increased to 0.91 and 0.83, respectively. Do you think the R-squared value will always increase (or at least remain the same) when you add more variables?
+
+ANS:
+
+Yes
+
+Feedback :
+The R-squared will always either increase or remain the same when you add more variables. Because you already have the predictive power of the previous variable so the R-squared value can definitely not go down. And a new variable, no matter how insignificant it might be, cannot decrease the value of R-squared.
+
+
+
+QUESTION 2:
+
+
+Assumptions of multiple linear regression
+Which of the following assumptions changes for multiple linear regression?
+
+OPTIONS:
+
+A.
+The error terms should be normally distributed.
+
+B.
+The error terms are centred at zero.
+
+C.
+The error terms have constant variance.
+
+D.
+None of the above.
+
+ANS:
+
+D.
+None of the above.
+
+Feedback :
+Correct! None of the above assumptions changes when moving from simple to multiple linear regression.
+
+ANS:
+
+D.
+None of the above.
+
+Feedback :
+Correct! None of the above assumptions changes when moving from simple to multiple linear regression.
+

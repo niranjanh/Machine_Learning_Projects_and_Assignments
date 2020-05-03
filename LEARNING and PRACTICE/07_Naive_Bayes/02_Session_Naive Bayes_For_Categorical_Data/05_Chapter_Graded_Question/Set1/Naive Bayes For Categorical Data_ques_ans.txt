@@ -1,0 +1,169 @@
+Graded Questions
+In this segment, you will solve questions on 'Naive Bayes' and will be graded on your answers.
+
+ 
+
+Comprehension - Spam and Ham E-Mails
+
+Bayesian classifiers are often used for document classification. The words in the documents are used as features for classification. For example, if you want to classify emails as spam or ham (genuine mail), you can use the ‘frequency of words in the text of an email’ as the features. The grammar is disregarded, which means that unimportant words like it, there, the, and etc.  are ignored.
+
+ 
+
+For example, if the main text of an email is:
+
+“Best offers on weight loss fitness bands! Buy this weekend to get a free protein supplement too!! Limited stock, buy now and get free stuff! Hurry up! For more free offers, subscribe on the link below.”  
+
+ 
+
+Then the frequently  occurring words i.e. the most important keywords (features) can be counted and stored in a table as shown below. The email above (obviously spam) is shown in the first row of the table. Freq 1 is the most frequent word; Freq 2 is the second most frequent word etc. Also, note that the order of features is important. If the features are (free, report, buy, click), in that order, then ‘free’ is ‘Freq 1’, ‘report’ is Freq 2 and so on. Which means that  (report, free, buy, click) is a different observation from (free, report, buy, click).
+
+ 
+
+The data set with features and class labels is shown below:
+
+Table 5: Most Occurring Words
+S.No	Class	Freq 1	Freq 2	Freq 3	Freq 4
+1.	Spam	free	buy	limited	hurry
+2.	Ham	reply	data	report	presentation
+3.	Ham	report	presentation	file	end of day
+4.	Spam	limited	file	buy	click
+5.	Ham	meeting	timelines	limited	documents
+6.	Spam	hurry	data	buy	stock
+7.	Spam	limited	sex	click	viagra
+8.	Ham	presentation	end of day	data	report
+9.	Ham	reply	data	presentation	click
+10.	Spam	free	reply	weekend	click
+11.	Spam	limited	click	free	hurry
+12.	Ham	meeting	end of day	weekend	data
+13.	Spam	hurry	weekend	stock	offer
+14.	Ham	report 	presentation	file	end of day
+15.	Ham	free	timelines	reply	offer
+ 
+
+Let’s assume a simplified scenario where spammers use only the following important words in their emails:
+
+Spam Keywords: buy, free, hurry, weekend, stock, offer, viagra, sex, limited, click
+ 
+
+Also, assume that you are building a model for an organisation where the only important words in genuine (ham) emails are as follows:
+
+Ham Keywords: reply, data, report, presentation, file, end of day, meeting, timelines, delay, documents
+
+ 
+
+Note: Wherever you come across the word independent/independence in this module, conditional independence is implied as discussed in the previous segment "Conditional Independence in Naive Bayes".
+
+ 
+
+NOTE:
+
+Use the above-given table to answer the following questions.
+To Solve the question, you need to very careful with the order of the features, For example: If my given feature list is(free, data, weekend, click) then free is freq1, data is freq2 and so on. Hence the probability of P(free | spam) will be 2/7 and P(click | spam) will be 2/7. 
+
+______________________________________________________________________________________________________________________________________
+
+QUESTION 1:
+
+Prior Probability
+What is the prior probability of a mail being spam, P(class = spam)?
+
+ANS:
+
+7/15
+Feedback :
+There are 7 spam mails in the data set.
+
+_______________________________________________________________________________________________________________________________________
+
+QUESTION 2:
+
+Naive Bayes Assumption
+What does Naive Bayes assume while classifying spam or ham mails?
+
+ANS:
+
+
+That frequency of keywords like hurry, free, offer etc. are conditionally independent of each other
+
+Feedback :
+Naive Bayes assumes that the features (frequency of hurry, free etc.) are conditionally independent of each other.
+
+
+_______________________________________________________________________________________________________________________________________
+
+QUESTION 3:
+
+Likelihood Calculation
+Consider an email with the vector of features X = (free, data, weekend, click). What is the likelihood, P(X | spam)?
+
+ANS:
+
+4/ 2401
+Feedback :
+P(X | spam) = P(free|spam). P(data|spam). P(weekend | spam). P(click|spam) = (2/7)(1/7)(1/7)(2/7) = 4/2401
+
+
+_______________________________________________________________________________________________________________________________________
+
+QUESTION 4:
+
+Likelihood Calculation
+Consider an email with the vector of features X = (free, data, weekend, click). What is the likelihood, P(X | ham)?
+
+ANS:
+
+2/ 4096
+Feedback :
+P(X | ham) = P(free|ham). P(data|ham). P(weekend | ham). P(click | ham) = (1/8)(2/8)(1/8)(1/8) = 2/4096.
+
+
+_______________________________________________________________________________________________________________________________________
+
+QUESTION 5:
+
+Calculating conditional probability
+The value of P(X|Class). P(Class) for class = spam for X = (free, data, weekend, click)?
+
+ANS:
+
+(4/2401)(7/15)
+Feedback :
+P(class = spam| X) = P(class = spam). P(X | class = spam) = (7/15)(4/2401).
+
+
+_______________________________________________________________________________________________________________________________________
+
+QUESTION 6:
+
+Posterior Probability
+What is the posterior for class = ham (i.e. without division by denominator) for the feature vector  X = (free, data, weekend, click)?
+
+ANS:
+
+(2/4096)(8/15)
+Feedback :
+P(class = ham| X) = P(class = ham). P(X | class = ham) = (8/15)(2/4096).
+
+
+_______________________________________________________________________________________________________________________________________
+
+QUESTION 7:
+
+Classifying a test point
+Which class should be point X = (free, data, weekend, click) be classified into?
+
+ANS:
+
+
+Spam
+Feedback :
+The (numerators of) posteriors, P(Class | X) for spam and ham are respectively (7/15)(4/2401) and (8/15)(2/4096), spam's being higher.
+
+_______________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+

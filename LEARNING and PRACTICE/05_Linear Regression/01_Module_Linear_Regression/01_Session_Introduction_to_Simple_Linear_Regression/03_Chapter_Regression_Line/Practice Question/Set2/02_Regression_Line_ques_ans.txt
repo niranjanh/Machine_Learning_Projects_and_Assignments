@@ -1,0 +1,27 @@
+Question 1:
+
+Coefficients of Regression Line
+Which statement explains the physical interpretation of the intercept of the regression line Y = β₀ + β₁.X, where Y is the sales amount in crores and X is the marketing spend in lakhs?
+
+
+Ans:
+
+When the amount spent on marketing is Rs. 0, the sales amount = β₀ crore
+
+For this regression line, β₀ is the intercept and β₁ is the slope. The value of Y (sales amount) is β₀ crore when the value of X (marketing spend) is Rs. 0.
+
+
+
+
+Question 2:
+
+Coefficients of Regression Line
+Which statement explains the physical interpretation of the slope of the regression line Y = β₀ + β₁.X, where Y is the sales amount in crores and X is the marketing spend in lakhs?
+
+
+Ans:
+
+For each additional 1 lakh spent on marketing, the predicted sales increases by β₁ crore
+
+Feedback :
+For this regression line, β₀ is the intercept and β₁ is the slope. For a unit increase in the quantity of X (marketing spend), Y (sales amount) increases by β₁.1 = β₁ units.

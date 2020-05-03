@@ -1,0 +1,71 @@
+QUESTION 1:
+
+Graded Questions
+An analyst observes a positive relationship between digital marketing expenses and online sales for a firm. However, she intuitively feels that she should add an additional predictor variable, one which has a high correlation with marketing expenses.
+
+If the analyst adds this independent variable to the model, which of the following could happen? More than one choices could be correct.
+
+OPTIONS:
+
+A.
+The model’s R-squared will decrease
+
+B.
+The model’s adjusted R-squared could decrease
+
+C.
+The Beta-coefficient for predictor - digital marketing expenses, will remain same
+
+D.
+The relationship between marketing expenses and sales can become insignificant
+
+
+
+ANS:
+
+B.
+The model’s adjusted R-squared could decrease
+
+Feedback :
+Adjusted R-squared could decrease if the variable does not add much to the model, to explain Online Sales.
+
+
+D.
+The relationship between marketing expenses and sales can become insignificant
+
+Feedback :
+The relation between marketing expenses and sales can become insignificant with the addition of a new variable.
+
+_______________________________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+Suppose you need to build a model on a data set which contains 2 categorical variables with 2 and 4 levels respectively. How many dummy variables should you create for model building?
+
+ANS:
+
+4
+
+Feedback :
+Since n-1 dummy variables can be used to describe a variable with n levels, you will get 1 dummy variable for the variable with two levels, and 3 dummy variables for the variable with 4 levels.
+_______________________________________________________________________________________________________________________________
+
+
+QUESTION 3:
+
+Redundant Variables
+If one of the feature variables say, A is being explained well by some of the other feature variables, this would mean that the variable A has:
+
+ANS:
+
+A high VIF
+
+Feedback :
+Correct! If the feature variable A is being well explained by the other feature variables, this would mean that A has a high VIF. This is also evident from the formula for VIF: 
+1/(1−R2i).
+
+Now, if A is being explained by some of the other feature variables, this would mean that the R-squared value is pretty high, which would make the denominator which is (1−R2i) very low, which again, in turn, would make the VIF value high. 
+_______________________________________________________________________________________________________________________________
+
+

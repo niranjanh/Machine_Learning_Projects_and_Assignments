@@ -1,0 +1,144 @@
+
+The contingency table above shows the number of females and males who joined specific programs. For example, it shows that 70 females joined the Data Science program and that 40 males joined the Deep Learning program. Also, notice that the table shows the totals in the last row and column, respectively.
+
+
+You have a total of 240 females and 260 males in the dataset. This is a total of 500. Finally, the table also shows the totals for specific programs. For example, 150 people joined the Data Science program, 100 joined Machine Learning, and so on.
+
+___________________________________________________________________________________________
+
+QUESTION 1:
+
+Given this contingency table, what is the probability that a randomly selected person joined Data Science?
+
+ANS:
+
+150/500
+
+Feedback :
+The table shows you that 150 people joined Data Science out of the total 500 people who are part of the data.
+
+Therefore, P(Person who joined DS) = 150/500 = .3 (or 30%).
+
+
+___________________________________________________________________________________________
+
+QUESTION 2:
+
+Given this contingency table, what is the probability that a randomly selected female joined DS? In other words, what is the probability of a person joining DS, GIVEN that she is female?
+
+ANS:
+
+70/240
+
+Feedback :
+The table shows you that 70 females joined DS out of the total 240 females in the dataset. 
+
+P( DS | Female) = 70/240 = .29166 or 29.16%
+
+___________________________________________________________________________________________
+
+QUESTION 3:
+
+Consider a set containing all DL students OR all male students. What is the Probability that a randomly selected person will belong to this set?
+
+Hint: Use the formula: (A or B) = p(A) + p(B) – p(A and B)
+
+ANS:
+
+310
+500
+
+Feedback :
+This question deals with a probability concept called the ‘OR’. There is a formula for OR, which is — P(A OR B) = P(A) + P(B) – P(A AND B)
+
+In this example, you’re looking at two things: DL and Male.
+
+So, the question asked is —P(DL OR Male) = P(DL) + P(Male) – P(DL AND Male)
+
+Using the table in the question description, you see that —P(DL) = 90/500
+
+ 
+
+P(Male) = 260/500
+
+ 
+
+P(DL AND Male) = 40/500
+
+ 
+
+Therefore ...
+
+P(DL OR Male) = P(DL) + P( Male) – P(DL AND Male)
+
+= 90/500 + 260/500 – 40/500 = (90 + 260 – 40)/500 = 310/500 = .62 or 62%
+
+ 
+
+**Now, why do you subtract the probability of (Male and DL)? The answer is that when you count all the males and then count all the people who joined DL, there is an overlap because some males joined DL. This means you counted them twice, and so you have to subtract the extra count.
+
+
+
+___________________________________________________________________________________________
+
+QUESTION 4:
+
+What is the probability of a student being a female AND an AI student?
+
+Hint: Use the formula: P(A AND B) = P(A | B) * P(B) 
+
+ANS:
+
+
+10/500
+
+Feedback :
+Here, the question is asking for P(Female AND AI).
+
+P(A AND B) = P(A | B) * P(B)
+
+This is read as the probability of A GIVEN B times the probability of B. When A and B are INDEPENDENT, P(A AND B) = P(A | B) * P(B) = P(A) * P(B).
+
+Here, P(Female | AI Student) = 10/40. i.e. If you know that 40 students are AI students, then 10 of them are female.
+
+P(AI Student) = 40/500
+
+Therefore, P(Female AND AI Student) = P(Female | AI Student) * P(AI Student) = 10/40 * 40/500 = 10/500 = .02 or 2%.
+
+You can also do this directly from the table, without the formula:
+
+P( Female AND AI Student) = 10/500 = .02 or 2%
+
+The two answers are identical, and there are just two ways to solve the question.
+
+
+
+___________________________________________________________________________________________
+
+QUESTION 5:
+
+What is the probability of a Deep Learning (DL) student being a male?
+
+ANS:
+
+
+
+40/90
+
+Feedback :
+Question is asking to determine P(M|DL). We know from the chain rule that
+
+P(A and B) = P(A|B)*P(B)
+
+Therefore P(A|B) = P(A and B) / P(B)
+
+Now from the given table P(M and DL) = 40/500  and P(DL) = 90/500.
+
+So P(M|DL) = P(M and DL)/P(DL) = (40/500)/(90/500) = 40/90.
+
+In fact we didn't need to do all these.
+
+As soon as we are talking about only DL students, we are talking about only 90 students. Now what is the probability of any student from this 90 students being a male. As there are 40 males in these 90 students, the probability of selecting a male is 40/90.
+
+
+

@@ -1,0 +1,30 @@
+QUESTION 1:
+
+Using Linear Regression
+In which of the following cases can linear regression be used?
+
+OPTIONS:
+
+A.
+UpGrad is looking to admit new students in its Data Analytics Program. Potential students are asked to fill various parameters such as previous company, grades, experience, etc. They need this data to figure out if an applicant would be a good fit for the program.
+
+
+B.
+Flipkart is trying to analyse user details and past purchases to identify segments where users can be targeted for advertisements.
+
+
+C.
+A researcher wishes to find out the amount of rainfall on a given day, given that pressure, temperature and wind conditions are known.
+
+
+D.
+A startup is analysing the data of potential customers. They need to figure out which people they should reach out for a sales pitch.
+
+
+ANS:
+
+C.
+A researcher wishes to find out the amount of rainfall on a given day, given that pressure, temperature and wind conditions are known.
+Feedback :
+Past data could be used to predict what the rainfall will be based on the given predictors.
+_______________________________________________________________________________________________________________________________

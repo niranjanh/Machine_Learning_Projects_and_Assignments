@@ -1,0 +1,141 @@
+Comprehension: Naive Bayes With One Feature
+
+Table 1: Mushroom Dataset with One Feature
+S.No	Type of mushroom	Cap shape
+1.	Poisonous		Convex
+2.	Edible			Convex
+3.	Poisonous		Convex
+4.	Edible			Convex
+5.	Edible			Convex
+6.	Poisonous		Convex
+7.	Edible			Bell
+8.	Edible			Bell
+9.	Edible			Convex
+10.	Poisonous		Convex
+11.	Edible			Flat
+12.	Edible			Bell
+ 
+
+Consider the table shown above.  There are two types of mushrooms, edible and poisonous, which is the target (dependent) variable.  They have various kinds of cap-shapes. Out of the total 12 mushrooms, eight are edible and four poisonous.
+____________________________________________________________________________________________________________________
+
+
+QUESTION 1:
+
+Identifying the features
+What is the feature in this task?
+
+ANS:
+
+Cap-Shape
+_____________________________________________________________________________________________________________________
+
+QUESTION 2:
+
+Probability calculation
+The probability of a CONVEX mushroom being edible, P(C = edible | X = CONVEX) is given by:
+
+ANS:
+
+P( X = CONVEX | C = edible) . P(C = edible) / P(X = CONVEX)
+_____________________________________________________________________________________________________________________
+
+QUESTION 3:
+
+Probability calculation
+The value of P(C = edible) is simply the number of edible mushrooms in the dataset divided by the total observations. What is the value of P( C = edible)?
+
+ANS:
+
+8/12
+Feedback :
+P(edible) is the fraction of edible mushrooms in the data, which is 8/12.
+_____________________________________________________________________________________________________________________
+
+
+QUESTION 4:
+
+Probability calculation
+Now let’s say you picked a new mushroom whose cap-shape is CONVEX. What are the chances of this happening, i.e. what is the value of P(X = CONVEX)?
+
+ANS:
+
+8/12
+Feedback :
+P(X = CONVEX) is the fraction of convex mushrooms in the data. There are 8 convex mushrooms, thus it is 8/12.
+
+_____________________________________________________________________________________________________________________
+
+
+QUESTION 5:
+
+Probability calculation
+What is the probability of the mushroom being CONVEX given it is edible, i.e. P(X = CONVEX | C = edible)? This is the fraction of CONVEX mushrooms out of all the edible ones.
+
+ANS:
+
+4/8
+Feedback :
+P(X = CONVEX | C = edible) means out of all the edible mushrooms, how many are CONVEX. Out of a total of 8 edible mushrooms, 4 are convex. Thus, it is 4/8.
+_____________________________________________________________________________________________________________________
+
+
+QUESTION 6:
+
+Probability calculation
+In the previous questions, you have calculated that P(C = edible) is 8/12, P(X = CONVEX) is 8/12 and  P(X = CONVEX | C = edible) is 4/8.
+
+What is the probability that the CONVEX mushroom is edible, P(C = edible | X = CONVEX)?
+
+ANS:
+
+4/8
+Feedback :
+P( X = CONVEX | C = edible) . P(C = edible) / P(X = CONVEX) = (4/8).(8/12) / (8/12) = 4/8.
+
+_____________________________________________________________________________________________________________________
+
+
+QUESTION 7:
+
+Probability calculation
+In the previous question, you found the probability of the CONVEX mushroom being edible. What is the probability of the CONVEX mushroom being poisonous, P(C = poisonous | X = CONVEX)?
+
+ANS:
+
+4/8
+Feedback :
+Since a mushroom can either be edible or poisonous, P(C = poisonous | X = CONVEX) is 1 - P(C = edible | X = CONVEX) = 1 - 4/8 = 4/8.
+
+_____________________________________________________________________________________________________________________
+
+QUESTION 8:
+
+Probability calculation
+What are the chances of a random mushroom being poisonous, i.e. P(C = poisonous)?
+
+ANS:
+
+4/12
+Feedback :
+There are 4 poisonous mushrooms out of 12.
+_____________________________________________________________________________________________________________________
+
+QUESTION 9:
+
+Probability calculation
+What are the chances of a mushroom being CONVEX given it is poisonous, i.e. P(X = CONVEX | C = poisonous)?
+
+ANS:
+
+1
+Feedback :
+P(X = CONVEX | C = poisonous) means out of all the poisonous mushrooms, how many are CONVEX. Out of the total 4 poisonous mushrooms, all the 4 are convex. Thus, it is 4/4.
+
+_____________________________________________________________________________________________________________________
+
+
+MORE INFO/ ADDITIONAL READINGS:
+
+https://stackoverflow.com/questions/10059594/a-simple-explanation-of-naive-bayes-classification
+

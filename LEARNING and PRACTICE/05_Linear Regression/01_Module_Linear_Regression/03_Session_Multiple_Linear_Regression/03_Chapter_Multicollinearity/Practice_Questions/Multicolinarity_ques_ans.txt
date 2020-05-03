@@ -1,0 +1,75 @@
+QUESTION 1:
+
+Effects of Multicollinearity
+Which of the following is not affected by multicollinearity i.e., if you add more variables that turn out to be dependent on already included variables?
+
+ANS:
+
+R-squared value
+
+Feedback :
+The predictive power given by the R-squared value is not affected because even though you might have redundant variables in your model, they would play no role in affecting the R-squared. Recall the thought experiment that Rahim had conducted in one of the lectures. So suppose you have two variables, X1 and X2 which are exactly the same. So using any of the following, say, 10X1 or (4X1 + 6X2) will give you the same result. In the second case, even though you have increased one variable, the predictive power remains the same.
+
+
+
+
+QUESTION 2:
+
+VIF
+VIF is a measure of:
+
+OPTIONS:
+
+A.
+How well a predictor variable is correlated with all the other variables, including the target variable
+
+B.
+How well a predictor variable is correlated with all the other variables, excluding the target variable
+
+C.
+How well a target variable is correlated with all the other predictor variables
+
+
+ANS:
+
+B.
+How well a predictor variable is correlated with all the other variables, excluding the target variable
+
+Feedback :
+VIF measures how well a predictor variable can be predicted using all other predictor variables
+
+
+
+
+QUESTION 3:
+
+Calculating VIF
+When calculating the VIF for one variable using a group of variables, the 
+R^2 came up to be 0.75. What will the approximate VIF for this variable be?
+
+ANS:
+
+4
+
+Feedback :
+The formula for VIF is given as:
+
+1/(1−Ri^2)
+
+So, you get:
+VIF = 4
+
+
+
+QUESTION 4:
+
+Analysing the VIF value
+Is the VIF obtained in the previous case a good VIF value?
+
+
+ANS:
+
+Yes
+
+Feedback :
+The common heuristic for VIF values is that if it is greater than 10, it is definitely high. If the value is greater than 5, it is okay but worth inspecting. And anything lesser than 5 is definitely okay.

@@ -1,0 +1,51 @@
+QUESTION 1:
+
+Linear Regression in Python
+Which of the following packages can be used to build a linear regression model in Python?
+
+ANS:
+
+A.
+statsmodels.api
+
+statsmodels.api can be used to build a linear regression model in Python.
+
+B.
+SKLearn
+
+SKLearn can be used to build a linear regression model in Python.
+
+
+C.
+SciPy
+
+Feedback :
+Reference : https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html 
+
+
+
+QUESTION 2:
+
+Generic steps in building a linear regression model
+Which of the following step(s) are required to fit a straight line through a set of data points using statsmodels.api?
+
+ANS:
+
+A.
+sm.add_constant(X)
+
+The two simple steps involved to fit a line are:
+
+sm.add_constant(X)
+
+B.
+sm.OLS(y, X).fit()
+
+
+sm.OLS(y, X).fit()
+
+The two simple steps involved to fit a line are:
+
+sm.add_constant(X)
+
+sm.OLS(y, X).fit()

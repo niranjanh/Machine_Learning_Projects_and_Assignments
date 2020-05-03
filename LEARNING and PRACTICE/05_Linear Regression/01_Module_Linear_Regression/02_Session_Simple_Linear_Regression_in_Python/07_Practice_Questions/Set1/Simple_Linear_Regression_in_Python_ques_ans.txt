@@ -1,0 +1,102 @@
+QUESTION 1:
+
+Best fit line
+Which method is used to find the best fit line for linear regression?
+
+ANS:
+
+Least Square Error
+
+Feedback :
+Correct! The least square error which gives the sum of the square of differences between the actual values and the predicted values (using the regression line fitted) is used to determine the best fit line. The key to getting the best fit line is minimising these errors.
+
+
+
+
+
+
+
+QUESTION 2:
+
+Hypothesis Test
+In order to reject the Null Hypothesis used in linear regression, the p-value of 
+βi should be?
+
+
+ANS:
+
+Less than 0.05
+
+Feedback :
+The Null hypothesis in the case of linear regression is:
+
+βi = 0
+
+So if your p-value is less than 0.05, you can reject the Null Hypothesis and conclude that the coefficient is significant.
+
+Also, note that 0.05 is just a conventional cutoff. Based on your requirement, you can set the cutoff to anything; it might be a higher value like 0.1 or a lower value like 0.02.
+
+
+
+QUESTION 3:
+
+Residual Analysis
+Which of the following is true regarding residual in linear regression?
+
+ANS:
+
+The sum of residuals should be equal to zero
+
+Feedback :
+Correct! Recall that one of the assumptions of linear regression was, the residuals are normally distributed around zero, i.e. their mean is equal to zero. Hence, the sum of residuals should also be zero.
+
+
+
+
+QUESTION 4:
+
+Significance of Fit
+Which of the following parameters is used to determine the overall significance of a model fit?
+
+
+ANS:
+
+F-statistic
+
+Feedback :
+Correct! In order to determine the overall model fit, the F-statistic is used. 
+
+The basic idea behind the F-test is that it is a relative comparison between the model that you've built and the model without any of the coefficients except for β0. 
+If the value of the F-statistic is high, it would mean that the Prob(F) would be low and hence, you can conclude that the model is significant. On the other hand, if the value of F-statistic is low, it might lead to the value of Prob(F) being higher than the significance level (taken 0.05, usually) which in turn would conclude that the overall model fit is insignificant and the intercept-only model can provide a better fit.
+
+
+
+QUESTION 5:
+
+Heteroscedasticity
+What does it imply if your linear regression model is said to be heteroscedastic?
+
+ANS:
+
+The variance in the data is not constant
+
+Feedback :
+Correct! Recall that one of the major assumptions of simple linear regression was that the error terms should be constant, i.e. homoscedastic. Heteroscedastic is just the opposite of that.
+
+
+QUESTION 6:
+
+t-value
+Which if the following expression gives the correct relationship between a beta coefficient and its t-value?
+
+ANS:
+
+t = βi/SE(βi)
+
+Feedback :
+The t-value for a particular coefficient is given by the coefficient divided by its standard error.
+
+
+
+
+

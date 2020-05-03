@@ -1,0 +1,24 @@
+Question 1:
+
+Least Squares Regression Line
+
+The coefficients of the least squares regression line are determined by the Ordinary Least Squares method — which basically means minimising the sum of the squares of the:
+
+Ans:
+
+y-coordinates of actual data - y-coordinates of predicted data
+
+The Ordinary Least Squares method has the criterion of the minimisation of the sum of squares of residuals. Residuals are defined as the difference between the y-coordinates of actual data and the y-coordinates of predicted data.
+
+
+
+Question 2:
+
+Best Fit Regression Line
+What is the main criterion used to determine the best-fitting regression line?
+
+Ans:
+
+The line that minimises the sum of squares of distances of points from the regression line
+
+The criterion is given by the Ordinary Least Squares (OLS) method, which states that the sum of squares of residuals should be minimum. This is explained by this option.

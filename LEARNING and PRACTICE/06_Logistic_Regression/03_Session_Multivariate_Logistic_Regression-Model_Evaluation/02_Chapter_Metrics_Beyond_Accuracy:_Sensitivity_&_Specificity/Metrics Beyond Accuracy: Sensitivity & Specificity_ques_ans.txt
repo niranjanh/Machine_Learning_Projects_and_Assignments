@@ -1,0 +1,103 @@
+QUESTION 1:
+
+False Positives
+What is the number of False Positives for the model given below?
+
+Actual/Predicted	Not Churn	Churn
+Not Churn		400		100
+Churn			50		150
+
+ANS:
+
+100
+
+Feedback :
+Correct! The false positives are the values which were actually 'Not Churn' but have been predicted as Churn. Hence, from the matrix above, the answer would be 100.
+
+You can also have a look at the labelled confusion matrix you just learnt about: 
+
+Actual/Predicted	Not Churn		Churn
+Not Churn		True Negatives		False Positives
+Churn			False Negatives		True Positives
+
+________________________________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+Sensitivity
+Sensitivity is defined as the fraction of the number of correctly predicted positives and the total number of actual positives, i.e.
+
+Sensitivity= TP/(TP +FN)
+
+What is the sensitivity of the following model?
+
+Actual/Predicted	Not Churn	Churn
+Not Churn		400		100
+Churn			50		150
+
+
+ANS:
+
+75%
+
+Feedback :
+Sensitivity is given as:
+
+Sensitivity= TP/(TP +FN)
+
+Here, TP (True Positives) = 150
+
+and FN (False Negatives) = 50
+
+Hence, you get:
+
+= 150/(150+50)
+= 75%
+
+ 
+
+________________________________________________________________________________________________________________________________
+
+QUESTION 3:
+
+Evaluation Metrics
+Among the three metrics that you've learnt about, which one is the highest for the model below?
+
+Actual/Predicted	Not Churn	Churn
+Not Churn			400	100
+Churn				50	150
+
+
+
+ANS:
+
+The formula for the three metrics are given as:
+
+Accuracy =  Correctly Predicted/Total no of Lables
+ 
+
+Sensitivity = Number of actial Yesses correctly Predicted/Total number of actual yeses
+ 
+	    = TP/(TP +FN)
+
+
+Specificity = number of actual Noes correctly pred/ Total number of actual Nos
+	    = TN / TN + FP
+
+Hence, you get:
+
+Accuracy =  400 +150/ 400+100+50+150
+	 =  78.57%
+
+Sensitivity = 150/150+50
+            = 75%
+
+Specificity = 400/400+100
+            = 80%
+
+As you can clearly see, Specificity (80%) is the highest among the three.
+
+ 
+
+________________________________________________________________________________________________________________________________

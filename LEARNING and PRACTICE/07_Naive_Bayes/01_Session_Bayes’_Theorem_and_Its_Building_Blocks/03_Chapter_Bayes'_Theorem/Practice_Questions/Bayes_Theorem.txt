@@ -1,0 +1,52 @@
+Let’s revise the concepts you have just learnt using the spam-ham example discussed earlier. Let’s define the events A and B as follows:
+
+A: The email is spam
+
+B: The email contains the word ‘viagra’
+
+Now based on above definition solve the below questions:
+
+____________________________________________________________________________________________________________________________
+
+QUESTION 1:
+
+Bayes Theorem and Its Building Blocks
+What type of probability is ‘the probability that an email which contains the word ‘viagra’ is spam’?
+
+
+ANS:
+
+Conditional probability
+
+____________________________________________________________________________________________________________________________
+
+QUESTION 2:
+
+Bayes Theorem and Its Building Blocks
+What type of probability is ‘the probability that an email contains the word ‘viagra’ and it is spam’?
+
+ANS:
+
+Joint probability
+____________________________________________________________________________________________________________________________
+
+
+QUESTION 3:
+
+Bayes Theorem and Its Building Blocks
+What is the symbolic notation of conditional probability?
+
+ANS:
+
+P(A/B)
+____________________________________________________________________________________________________________________________
+
+QUESTION 4:
+
+Bayes Theorem and Its Building Blocks
+What is the symbolic notation of joint probability?
+
+ANS:
+
+P(AnB)
+____________________________________________________________________________________________________________________________

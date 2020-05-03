@@ -1,0 +1,150 @@
+QUESTION 2:
+
+
+Elimination based on p-values
+Suppose you're trying to predict the gross collection of a movie based on the following five factors: 'Budget', 'Average Critic Score', 'Facebook Likes', 'Number of Tweets', and 'Number of Screens'.
+
+You obtained the following p-values for the five variables after fitting a regression line. Assuming you're only using p-value as a criteria to drop the variables and a p-value > 0.05 is not acceptable, which of these variables do you think is not significant in the prediction of gross collections and should be definitely dropped? Only one option is correct.
+
+Budget	0.03
+Average Critic Review	0.21
+Facebook Likes	0.11
+Number of Tweets	0.32
+Number of Screens	0.01
+
+OPTIONS:
+
+A.
+Number of Tweets
+
+B.
+Number of Tweets, Average Critic Review
+
+C.
+Number of Tweets, Facebook Likes
+
+D.
+Number of Screens
+
+ANS:
+
+A.
+Number of Tweets
+
+Feedback :
+Yes! As you can see, the p-value of 'Number of Tweets' is very high and thus, this variable is insignificant. Now, there are other variables in the list which also have a high p-value but we don't drop these simultaneously as it might happen that dropping 'Number of Tweets' might reduce the p-value of the other variables and make them significant.
+
+_______________________________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+Scaling Variables
+Which of the following is/are true regarding the scaling of variables? More than one option(s) may be correct.
+
+OPTIONS:
+
+A.
+Scaling should be done before the test-train split.
+
+B.
+Scaling should be done after the test-train split.
+
+C.
+Standardised scaling will affect the values of dummy variables but MinMax scaling will not.
+
+D.
+MinMax scaling will affect the values of dummy variables but standardized scaling will not.
+
+
+ANS:
+
+B.
+Scaling should be done after the test-train split.
+
+Feedback :
+Correct! Scaling should always be done after the test-train split since you don't want the test dataset to learn anything from the train data. So if you're performing the test-train split earlier, the test data will then have information regarding the data like the minimum and maximum values, etc.
+
+
+C.
+Standardised scaling will affect the values of dummy variables but MinMax scaling will not.
+
+Feedback :
+MinMax scaling scales in such a way that all the values lie between 0 and 1 using the formula:
+
+(x−min(x))/(max(x)−min(x))
+
+So if you have dummy variables, which can only take the values 0 and 1, you can notice that for the case of zero, the variable remains zero and for the case of 1, the variable remains 1.
+
+On the other hand, the standard scaler scales in such a way that the mean of the dataset becomes zero and standard deviation becomes one. So this will clearly distort the values of the dummy variables since some of the variables will become negative.
+
+
+_______________________________________________________________________________________________________________________________
+
+
+QUESTION 3:
+
+Multiple Linear Regression
+Consider you are performing multiple linear regression where X1 and X2 are independent variables and Y is the dependent variable. What can you say about the coefficient of X1 and value of y in the regression equation? 
+
+y = β0 + β1 ∗ X1 + β2 ∗ X2
+
+OPTIONS:
+
+A.
+The predicted value of Y increases by  β1 for a unit increase in X1, irrespective of a change in X2.
+
+B.
+The predicted value of Y increases by β1 for a unit increase in X1, given X2 does not change.
+
+C.
+The predicted value of Y is β1 when X1=1.
+
+D.
+The predicted value of Y is X2 when X1=0.
+
+ANS:
+
+B.
+The predicted value of Y increases by β1 for a unit increase in X1, given X2 does not change.
+
+Feedback :
+Consider the value of X1 changes from 0 to 1 and the value of X2 stays as 0 or a constant. Then, the value of Y would have changed by 
+β1 units given beta2 and X2 are constants.
+_______________________________________________________________________________________________________________________________
+
+
+QUESTION 4:
+
+Rsq-Adjusted
+In the R-squared Adjusted metric, R-squared is “adjusted” or modified according to:
+
+OPTIONS:
+
+A.
+Number of predictors
+
+B.
+Sample size
+
+C.
+Number of missing values in data
+
+D.
+All of the above
+
+ANS:
+
+A.
+Number of predictors
+
+Feedback :
+In the R-squared Adjusted formula, you can see the term ‘k’ in the denominator, where ‘k’ refers to the number of predictors or features in the model.
+
+
+B.
+Sample size
+
+Feedback :
+In the R-squared Adjusted formula, you can see the term ‘n’ in both numerator and denominator, where ‘n’ refers to sample size.
+_______________________________________________________________________________________________________________________________

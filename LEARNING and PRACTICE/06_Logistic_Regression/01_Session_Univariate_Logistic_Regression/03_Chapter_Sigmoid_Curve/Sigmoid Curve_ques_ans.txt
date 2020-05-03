@@ -1,0 +1,39 @@
+QUESTION 1:
+
+Sigmoid Curve
+This is the sigmoid curve equation: 
+y = P(Diabetes) = 1/ (1+e^−(β0+β1x)). 
+Here, let’s say you take 
+β0 = -15 and β1 = 0.065. Now, what will be the probability of diabetes for a patient with sugar level 220?
+
+ANS:
+
+0.33
+
+Feedback :
+Here, the probability of diabetes for a person with sugar level x is given by 
+
+y = P(Diabetes) = 1/ (1+e^−(β0+β1x)). 
+Now, taking 
+β0 = −15 and 
+β1 = 0.065,
+ the probability of diabetes for a person with sugar level 220 will be given by 
+P(Diabetes) = 1/ (1+e^−(β0+β1x))
+= 0.33.
+
+______________________________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+Sigmoid Curve
+For the sigmoid curve (
+β0 = -15 and 
+β1 = 0.065), what will be the probability of diabetes for a patient with sugar level 240?
+
+ANS:
+
+0.64
+
+
+______________________________________________________________________________________________________________________________

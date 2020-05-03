@@ -1,0 +1,126 @@
+QUESTION 1:
+
+TPR and FPR
+Given the following confusion matrix, calculate the value of True Positive Rate (TPR) and False Positive Rate (FPR).
+
+Actual/Predicted	Not Churn	Churn
+Not Churn		300		200
+Churn			100		400
+
+ANS:
+
+TPR = 80%
+
+FPR = 40%
+
+Feedback :
+Correct! Recall the formulas for TPR and FPR were:
+
+TPR =TP/TP+FN
+
+FPR=FP/FP+TN
+
+Here,
+
+TP = 400; FN = 100; FP = 200; TN = 300
+
+Hence, you get -
+
+TPR=400/400+100
+=80%
+
+FPR=200/200+300
+=40%
+
+___________________________________________________________________________________________________________--
+
+QUESTION 2:
+
+True Positive Rate
+You have the following table showcasing the actual 'Churn' labels and the predicted probabilities for 5 customers.
+
+ 
+
+Customer	Churn	Predicted Churn Probability
+Thulasi		1	0.52
+Aditi		0	0.56
+Jaideep		1	0.78
+Ashok		0	0.45
+Amulya		0	0.22
+ 
+
+Calculate the True Positive Rate and False Positive rate for the cutoffs of 0.4 and 0.5. Which of these cutoffs, will give you a better model?
+
+Note: The good model is the one in which TPR is high and FPR is low.
+
+ANS:
+
+
+Cutoff of 0.5
+
+Feedback :
+Now, at the cutoff of 0.4, you get the following values of predicted probabilities: 
+
+Customer	Churn	Predicted Churn Probability	Predicted Churn Label
+Thulasi		1	0.52				1
+Aditi		0	0.56				1
+Jaideep		1	0.78				1
+Ashok		0	0.45				1
+Amulya		0	0.22				0
+ 
+
+From the above table, you can easily calculate:
+
+True Positives = 2
+
+False Positives = 2
+
+Also, from the original table, you have:
+
+Actual Positives = 2
+
+Actual Negatives = 3
+
+Hence, you get:
+
+TPR  = 2/2 = 100%
+
+FPR = 2/3 = 67%
+
+Performing similar steps for a cutoff of 0.5 will give you -
+
+TPR=100%
+
+FPR≈33%
+
+(Do calculate it yourself to verify)
+
+As you can see, with both the cutoffs, the TPR is 100% but for the cutoff 0f 0.5 you have a lower value of FPR. So clearly, a cutoff of 0.5 gives you a better model.
+
+Please note that 0.5 just gives the better model among 0.4 and 0.5. It might be possible that there is a cutoff point which gives an even better model.
+
+_______________________________________________________________________________________________________
+
+QUESTION 3:
+
+Area Under the Curve
+You have the following five AUCs (Area under the curve) for ROCs plotted for five different models. Which of these models is the best?
+
+
+
+Model	AUC
+A	0.54
+B	0.82
+C	0.79
+D	0.66
+E	0.56
+
+ANS:
+
+B
+
+Feedback :
+Correct!
+
+Recall that when the ROC curve is more towards the top left corner of the graph, the model is deemed to be more accurate. Hence, a greater area under the curve would mean the model is more accurate. Among the five models given, B has the highest AUC and hence is the most accurate model. Also, note that the highest value of AUC can be 1.
+

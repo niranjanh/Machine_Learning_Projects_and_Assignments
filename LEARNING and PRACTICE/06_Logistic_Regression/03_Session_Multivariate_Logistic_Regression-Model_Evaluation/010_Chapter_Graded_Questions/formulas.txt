@@ -1,0 +1,30 @@
+Accuracy =  Correctly Predicted/Total no of Lables
+
+
+Sensitivity = Number of actial Yesses correctly Predicted/Total number of actual yeses
+ 
+	    = TP/(TP +FN)
+
+
+Specificity = number of actual Noes correctly pred/ Total number of actual Nos
+	    = TN / TN + FP
+
+
+
+
+False Postive Rate = FP/TN+FP
+
+Positive Predicted Value =TP/TP+FP
+
+Negative Predicted Value =TN/TN+FN
+
+TPR =TP/TP+FN
+
+FPR=FP/FP+TN
+
+Precision =TP/TP+FP
+
+Recall= TP/TP+FN
+
+
+

@@ -1,0 +1,83 @@
+QUESTION 1:
+
+
+Calculating Precision
+Calculate the precision value for the following model.
+
+Actual/Predicted	Not Churn	Churn
+Not Churn			400	100
+Churn				50	150
+
+
+ANS:
+
+60%
+
+Feedback :
+Correct! The formula for precision is given by:
+
+Precision =TP/TP+FP
+
+From the matrix given,
+
+TP = 150
+
+FP = 100
+
+Hence, you get,
+
+=150/150+100
+=60%
+
+
+_______________________________________________________________________________________________________________________
+
+
+
+QUESTION 2:
+
+
+F1-score
+There is a measure known as F1-score which essentially combines both precision and recall. It is the basically the harmonic mean of precision and recall and its formula is given by:
+
+F = 2×precison×recall/precision+recall
+
+
+The F1-score is useful when you want to look at the performance of precision and recall together.
+
+Calculate the F1-score for the model below:
+
+Actual/Predicted	Not Churn	Churn
+Not Churn	400	100
+Churn	50	150
+
+ANS:
+
+67%
+
+Feedback :
+Correct!
+
+From the confusion matrix given,
+
+TP = 150
+
+FP = 100
+
+FN = 50
+
+Hence, you get -
+
+precision
+= 
+0.6
+
+Recall= 150/150+50
+=0.75
+
+So, the F1-score becomes - 
+
+F = 2×0.6×0.75/0.6+0.75
+≈66.67%
+≈67%
+

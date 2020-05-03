@@ -1,0 +1,14 @@
+QUESTION 1:
+
+Assumptions of Simple Linear Regression
+What will be the effect of the error terms not being homoscedastic in nature?
+
+ANS:
+
+The inferences made on the model would be unreliable.
+
+Feedback :
+Yes! Even if you fit a line through the data, you cannot make inferences about the model. The parameters used to make inferences (which you will study in later segments) will become highly unreliable.
+
+
+

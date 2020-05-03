@@ -1,0 +1,59 @@
+QUESTION 1:
+
+
+Log Odds
+So, let’s say that the equation for the log odds is:
+
+ln(P/(1−P)) = − 13.5 + 0.06x
+
+For x = 220, the log odds are equal to -13.5+(0.06*220) = -0.3. For x = 231.5, log odds are equal to:
+
+ANS:
+
+0.39
+
+Feedback :
+For a given value of x, the log odds are equal to -13.5 + 0.06x. Putting in the value of x here, i.e. 231.5, you get that the log odds = 0.39.
+
+______________________________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+Log Odds
+So, let’s say that the equation for log odds is:
+
+ln(P/(1−P)) = − 13.5 + 0.06x
+
+For x = 220, the log odds are equal to -0.3 and for x = 231.5, the log odds are equal to 0.39. For x = 243, the log odds are equal to:
+
+
+ANS:
+
+1.08
+
+Feedback :
+For a given value of x, the log odds are equal to -13.5 + 0.06x. Putting in the value of x here, i.e. 243, you get that the log odds = 1.08. However, you can actually directly guess the answer, without any calculations. The last time you increased x by 11.5, i.e. from 220 to 231.5, the log odds increased by 0.69, i.e. from -0.3 to 0.39. Since the relationship between x and log odds is linear, when you increase x by 11.5 again to make it 243, the log odds will increase by 0.69 again to get to 1.08.
+
+______________________________________________________________________________________________________________________________
+
+
+QUESTION 3:
+
+
+So, now, for a few values of x, you know the value of the odds.
+
+X	Odds
+220	0.74
+231.5	1.48
+243	2.96
+So, the odds for sugar level of 254.5 will be closest to which of the following values?
+
+ANS:
+5.92
+
+Feedback :
+As you can see in the table, and as has been said by the professor, every time the value of x increases by 11.5, the value of the odds approximately doubles. Hence, if you increase x from 243 to 254.5, the odds will approximately double, from 2.96 to approx. 5.92.
+
+______________________________________________________________________________________________________________________________
+

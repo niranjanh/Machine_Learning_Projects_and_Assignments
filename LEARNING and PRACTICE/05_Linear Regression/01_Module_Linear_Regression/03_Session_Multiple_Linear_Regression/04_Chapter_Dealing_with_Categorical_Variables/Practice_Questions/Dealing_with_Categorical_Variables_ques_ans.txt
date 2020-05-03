@@ -1,0 +1,10 @@
+QUESTION 1:
+
+Number of Dummy Variables
+The creation of dummy variables to convert a categorical variable into a numeric variable is an important step in data preparation. Consider a case where a categorical variable is a factor with 22 levels. How many dummy variables will be required to represent this categorical variable while developing the linear regression model?
+
+ANS:
+
+n - 1 = 22 - 1 = 21
+
+

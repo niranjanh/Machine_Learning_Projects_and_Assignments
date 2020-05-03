@@ -1,0 +1,28 @@
+QUESTION 1:
+
+
+Logistic Regression
+Consider that you are working in a large manufacturing company such as “APB.” APB produces high-tech appliances to test equipment attached to planes. Most of these appliances are often used to track equipment performance on an hourly basis. This generates a high amount of performance data. For now, let's focus only on the three most critical equipment - smoking detector, oxygen balance detector and microphone. The overall data contains two types of variables:
+
+Performance variables such as an equipment's life expectancy, rpm (speed) etc.
+
+Environmental variables such as humidity, temperature, pressure etc.
+
+This data was collected over the past 2 years for each piece of equipment.
+
+In your opinion, which of the following problems, when solved using the data from above, will result in the highest business growth?
+
+OPTIONS:
+
+A.
+Data can be used for calculating the life expectancy of the equipment.
+
+B.
+Data can be used for identifying the chances of an equipment’s failure.
+
+C.
+Data can be used for controlling the equipment's performance on a daily basis.
+
+ANS:
+
+

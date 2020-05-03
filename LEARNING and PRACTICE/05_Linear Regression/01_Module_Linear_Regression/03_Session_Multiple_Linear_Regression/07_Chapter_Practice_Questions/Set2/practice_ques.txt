@@ -1,0 +1,47 @@
+QUESTION 1:
+
+
+Dummy Variables
+Suppose you have 'n' categorical variables, each with 'm' levels. How many dummy variables would you need to represent all the levels of all the categorical variables?
+
+ANS:
+
+(m-1) * n
+
+Feedback :
+Each of the dummy variables has 'm' levels. So to represent one categorical variable, you would require (m-1) levels. Hence, to represent 'n' categorical variables, you would need (m-1)*n dummy variables.
+
+
+
+
+QUESTION 2:
+
+Automated Feature Selection
+Which of the following is/are an example of an automated approach for linear regression?
+
+ANS:
+
+A.
+Recursive Feature Elimination
+
+B.
+Stepwise Selection using AIC
+
+C.
+Regularisation
+
+
+
+
+QUESTION 3:
+
+Redundant Variables
+After performing inferences on a linear model built with several variables, you concluded that the variable ‘r’ was almost being described by other feature variables. This meant that the variable ‘r’:
+
+ANS:
+
+Had a high VIF
+
+Feedback :
+Correct! If the variable is being described well by the rest of the feature variables, it means it has a high VIF meaning it is redundant in the presence of the other variables.
+

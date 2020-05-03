@@ -1,0 +1,79 @@
+Bayes Theorem
+
+
+QUESTION 1:
+
+Courses		Data Science(DS)	Machine Learning(ML)	Deep Learning(DL)	Big Data(BD)	Artificial Intelligence(AI)	Total
+
+Male		80			60			40			50		30				260
+
+Female		70			40			50			70		10				240
+
+Total		150			100			90			120		40				500
+
+Given this contingency table, Determine if being Male and having joined Big Data course are INDEPENDENT?
+
+ANS:
+
+No, they are not
+
+Feedback :
+ 
+
+To prove that two variables (say A and B) are independent, we must show that
+
+P( A AND B) = P(A | B) * P(B) = P(A) * P(B)
+
+First, from the Contingency Table:
+
+ 
+
+P(A AND B) is P( Male AND BD Student) = 50/500
+
+ 
+
+P(A) = P(Male) = 260/500
+
+P(B) = P(BD Student) = 120/500
+
+P(A | B) = P(Male GIVEN BD Student) = 50/120
+
+[REFER IMAGE HERE]
+
+OK- now we have everything we need to check for independence:
+
+P( A AND B) = P(A | B) * P(B) = P(A) * P(B)
+
+P(A | B) * P(B)= P(Male | BD Student) * P(BD Student)
+
+                     = 50/120 * 120/500 = 50/500
+
+P(A) * P(B) = P(Male) * P(BD Student) = 260/500 * 120/500
+
+As we can see P(Male | BD Student) * P(BD Student) not equal to P(Male) * P(BD Student)
+
+So NO these are NOT independent.
+
+____________________________________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+Given this contingency table,answer the following.
+
+The probability of a student being a Female student and a DL Student is greater than the probability of a Female student being a DL student.
+
+ANS:
+
+False
+
+Feedback :
+ 
+
+Let us first calculate the probability of a student being a Female student and a DL Student. We essentially want to calculate P(F and DL) . From the table we can see that there are 50 students who are both a Female and a DL students out of total 500 students hence P(F and DL) = 50/500=5/50.
+
+Now the second probability is “probability of a Female student being a DL student” or P(DL |F). We are interested in the probability of a DL student given that the student is a Female. There are 240 Females out of which DL students are 50. Therefore P(DL|F) = 50/240=5/24
+
+The statement is false.
+
+_________________________________________________________________________________________________________________________________________

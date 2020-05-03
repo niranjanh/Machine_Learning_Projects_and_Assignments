@@ -1,0 +1,83 @@
+QUESTION 1:
+
+Hypothesis Test
+What does it mean if you fail to reject the Null hypothesis in the case of simple linear regression?
+
+ANS:
+
+β1 and thus, the independent variable it is associated with is insignificant in the prediction of the dependent variable. 
+
+Feedback :
+Correct! The Null Hypothesis in simple linear regression is:
+
+β1 = 0
+
+Thus, if we fail to reject the Null hypothesis, it means that 
+β1 is indeed zero, and thus insignificant for the prediction of the independent variable.
+
+
+QUESTION 2:
+
+P-value
+Which of the following is used to calculate the p-value for a particular beta coefficient?
+
+
+ANS:
+
+The t-statistic of the beta coefficient
+
+Feedback :
+The t-statistic along with the t-distribution table is used to determine the p-value of the coefficient.
+
+
+QUESTION 3:
+
+Distribution of the Error Terms
+If the sample size is small, i.e. less than 30, which of the following distribution is used to describe the error terms?
+
+ANS:
+
+T-distribution
+
+Feedback :
+Correct! In case of a small sample size, we use a t-distribution which is very similar to a normal distribution.
+
+
+
+QUESTION 4:
+
+T-score
+Suppose that for a linear model, you got β1 as 0.5. 
+Also, the standard error of 
+β1 was found out to be 0.02. What will be the value of t-score for β1?
+
+
+ANS:
+
+25
+
+Feedback :
+Recall that the t-score for 
+β1 is given as 
+
+β1/SE(β1).
+
+Hence, you have:
+
+t-score = 0.5/0.02 = 25
+
+
+
+
+QUESTION 5:
+
+Significance of Beta
+From the t-score you got in the previous question, what can you say about the significance of β1?
+
+
+ANS:
+
+β1 is significant.
+
+Feedback :
+Correct! Recall that a t-distribution is very similar to a normal distribution. And a value as big as 25 means a practically zero p-value which in turn means that the variable is significant. You can have a look at the t-table here anyway. And you'll anyway see this in the Python demo in the next segment.

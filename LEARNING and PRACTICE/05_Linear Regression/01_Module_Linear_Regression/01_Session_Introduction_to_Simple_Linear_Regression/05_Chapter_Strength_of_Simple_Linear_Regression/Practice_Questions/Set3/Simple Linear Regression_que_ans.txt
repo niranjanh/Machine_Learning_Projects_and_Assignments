@@ -1,0 +1,59 @@
+Question 1:
+
+Correlation Coefficient
+
+The value of the correlation coefficient will always be:
+
+Ans:
+
+Between -1 and 1
+
+Feedback :
+Correct! The value of the correlation coefficient always lies between -1 and 1, where a negative value implies a negative correlation, a positive value shows a positive correlation, and a zero value shows no correlation.
+
+
+Question 2:
+
+R-squared
+
+The strength of a linear regression line is determined by the value of the R-squared. If this value is found to be 0, what does it imply?
+
+ANS:
+
+No variance in the data is being explained by the fitted line.
+
+Feedback :
+Correct! The value of R-squared lies between 0 and 1, where 1 implies that the variance in the data is being explained by the model, and 0 implies that none of the variance values is being explained by the model. Obviously, it is very difficult to achieve either of the extreme values.
+
+
+
+Question 3:
+
+Correlation
+The following two straight lines were fitted for two sets of datapoints:
+
+What will the value of the correlation coefficients be for each of the two cases?
+
+ANS:
+
+1 and 1
+
+Feedback :
+Notice that the relationship between X and y is perfectly linear in both cases. Their slopes are 1 and 0.5. But since all the points lie on the straight line, the correlation coefficient would be 1. The slope of the straight line does not determine the correlation between the variables.
+
+
+
+Question 4:
+
+Correlation
+
+Suppose that you run a linear regression on the data, where you have X as the independent variable and y as the target variable. You find that the correlation between y and X is -0.92. What can you say in this situation?
+
+ANS:
+
+X and y are strongly related.
+
+Feedback :
+Correct! The absolute value of the correlated coefficient is very high. The negative sign just implies that X and y are negatively correlated. Hence, they have a very strong negative correlation.
+
+

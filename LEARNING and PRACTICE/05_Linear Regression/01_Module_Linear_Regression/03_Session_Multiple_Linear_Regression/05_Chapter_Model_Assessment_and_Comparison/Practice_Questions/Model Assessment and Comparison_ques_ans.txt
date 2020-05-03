@@ -1,0 +1,40 @@
+QUESTION 1:
+
+Calculating Adjusted R-Squared
+When a model was built from a dataset with 101 samples and 10 predictor variables, the R-squared value was found to be 0.7. What will the value of the adjusted R-squared be for the same model?
+
+
+ANS:
+
+0.67
+
+Feedback :
+The formula for adjusted R-squared is given as:
+
+1−((1−R2)(N−1)/(N−p−1))
+
+So, substituting the given values at the appropriate places gives us:
+
+= 1−((1−0.7)(101−1)/(101−10−1))
+= 0.67
+
+
+
+QUESTION 2:
+
+R-squared vs Adjusted R-squared
+Why do you think it is better to use adjusted R-squared in the case of multiple linear regression?
+
+
+ANS:
+
+Suggested Answer:
+
+The major difference between R-squared and Adjusted R-squared is that R-squared doesn't penalise the model for having more number of variables. Thus, if you keep on adding variables to the model, the R-squared will always increase (or remain the same in the case when the value of correlation between that variable and the dependent variable is zero). Thus, R-squared assumes that any variable added to the model will increase the predictive power.
+
+Adjusted R-squared on the other hand, penalises models based on the number of variables present in it. So if you add a variable and the Adjusted R-squared drops, you can be certain that that variable is insignificant to the model and shouldn't be used. So in the case of multiple linear regression, you should always look at the adjusted R-squared value in order to keep redundant variables out from your regression model.
+
+
+MY ANS:
+
+Because it applies penalties to the models for using more features and hence reducing the R square of models using more predictor variables and not affecting R square value of those models which are not using multiple predictor variable, hence we can get comparable R square values of all model, then, we can compare and choose the best one

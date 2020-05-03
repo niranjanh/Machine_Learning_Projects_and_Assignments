@@ -1,0 +1,31 @@
+Question 1:
+
+Intercept of a Straight Line
+What is the intercept of the given line? Use the graph given above to answer this question.
+
+Ans: 3
+
+The value of y when x = 0 in the given straight line is 3. So, 3 would be the intercept in this case.
+
+
+
+Question 2:
+
+Slope of a Straight Line
+What is the slope of the given line? Use the graph given above to answer this question.
+
+Ans: 1/2
+
+The slope of any straight line can be calculated by (y₂ - y₁)/(x₂ - x₁), where (x₁, y₁) and (x₂, y₂) are any two points through which the given line passes. This line passes (0,3) and (2, 4); so the slope of this line would be (4-3/2-0) = ½.
+
+
+
+
+Question 3:
+
+Equation of a Straight Line
+What would be the equation of the given line?
+
+Ans: Y = X/2 + 3
+
+The standard equation of a straight line is y = mx + c, where m is the slope and c is the intercept. In this case, m = ½ and c = 3, so equation would be Y = X/2 + 3.

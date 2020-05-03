@@ -1,0 +1,57 @@
+Question 1:
+
+
+Consider a function  f (x,y)= (x-y-1)^2 + (3x-2y-1)^2. Answer the following questions (which are steps to minimise a cost function) and finally obtain the minimum value of the function f(x,y).
+
+Select the correct function g(x,y) obtained by differentiating f(x,y) w.r.t x.
+
+Ans:
+2(10x-7y-4)
+
+Steps:
+
+Do the differentiation wrt x
+
+
+Question 2:
+
+Differentiation w.r.t y
+
+Consider a function f (x,y)= (x-y-1)^2 + (3x-2y-1)^2 . Answer the following questions (which are steps to minimise a cost function) and finally obtain the minimum value of the function f (x,y).
+
+Select the correct function h(x,y) obtained by differentiating f (x,y) w.r.t y.
+
+Ans:
+2(-7x+5y+3)
+
+Steps:
+
+Do the differentiation wrt y
+
+
+
+
+Question 3:
+
+Simultaneous Equations
+Find out the values of x and y obtained by equating g(x,y) = 2(10x-7y-4) and h(x,y) = 2(-7x+5y+3) to 0 and solving the linear equations.
+
+Ans:
+
+x=-1, y=-2
+
+
+
+
+Question 4:
+
+Minimum Value
+
+Substituting the values of x and y obtained in the previous questions, find the minimum value of f (x,y)= (x-y-1)^2 + (3x-2y-1)^2.
+
+Ans:
+
+0
+
+
+

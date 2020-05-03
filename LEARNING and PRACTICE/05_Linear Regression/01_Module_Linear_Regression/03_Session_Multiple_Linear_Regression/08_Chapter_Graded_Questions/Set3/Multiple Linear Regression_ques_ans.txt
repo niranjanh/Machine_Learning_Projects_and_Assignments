@@ -1,0 +1,51 @@
+
+QUESTION 1:
+
+R-squared
+Given different Rsq values of linear regression models on the same dataset, which model would you choose as the best predictor?
+
+OPTIONS:
+
+A.
+0.86
+
+B.
+0.76
+
+C.
+0.94
+
+D.
+Rsq values are insufficient to answer this question.
+
+
+ANS:
+
+D.
+Rsq values are insufficient to answer this question.
+
+Feedback :
+ Rsq values are sometimes too high even due to overfitting. You cannot compare models with a different number of features/predictors without the rsq adjusted value.
+
+_______________________________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+R-squared
+State true or false:
+
+Each time you add a feature to a model, the R-squared increases or remain same, even if it is by chance. It never decreases. 
+
+
+
+ANS:
+
+True
+
+Feedback :
+When you add a variable to your linear regression model, the value of its coefficient is optimized to give the best possible R-squared value.
+The coefficient can take a non-zero value, which increases the value of R-squared for the model as compared to the previous model; or the coefficient is zero, which causes the R-squared value to remain the same. 
+Hence, adding a feature will either always increase the R-squared value or not affect it at all.
+_______________________________________________________________________________________________________________________________
+

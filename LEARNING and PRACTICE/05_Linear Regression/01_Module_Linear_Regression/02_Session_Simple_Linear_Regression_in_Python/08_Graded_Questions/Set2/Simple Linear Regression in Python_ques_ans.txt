@@ -1,0 +1,26 @@
+QUESTION 1:
+
+Correlation
+The correlation coefficient between the age of a person and their IQ test score is found to be -1.0087.
+What can you conclude from this?
+
+OPTIONS:
+
+A.
+Age is a good predictor of IQ.
+
+B.
+Age is not a good predictor of IQ.
+
+C.
+None of the above
+
+
+
+ANS:
+
+C.
+None of the above
+
+Feedback :
+The correlation coefficient should be in the range [1,-1]. A value beyond this range indicates an error in measurement.

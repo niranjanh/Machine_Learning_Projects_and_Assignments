@@ -1,0 +1,11 @@
+QUESTION 1:
+
+Model Assessment
+After performing inferences on a linear model built with several variables, you concluded that the variable ‘r’ was insignificant. This meant that the variable ‘r’:
+
+ANS:
+
+Had a high p-value
+
+Feedback :
+A high p-value means that the variable is not significant, and hence, doesn't help much in prediction.

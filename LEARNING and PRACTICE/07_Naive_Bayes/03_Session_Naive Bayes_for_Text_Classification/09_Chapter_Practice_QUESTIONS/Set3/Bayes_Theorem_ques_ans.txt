@@ -1,0 +1,90 @@
+Bayes Theorem
+
+Suppose A and B are two independent events. Given that P(not A) = 0.2 and P(B)=0.3. Consider following unfilled contingency table and answer the questions
+
+	 	A		Not A	       Total
+
+B	 	 	 
+
+Not B	 	 	 
+
+Total	 	 				50
+
+
+
+________________________________________________________________________________________________________________
+
+QUESTION 1:
+
+Bayes Theorem
+Suppose A and B are two independent events. Given that P(not A) = 0.2 and P(B)=0.3. Consider following unfilled contingency table and answer the questions.
+
+What is the probability of A and B happening together?
+
+ANS:
+
+12/50
+
+________________________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+Bayes Theorem
+Suppose A and B are two independent events. Given that P(not A) = 0.2 and P(B)=0.3. Consider following unfilled contingency table and answer the questions
+
+What is the probability of A happening and B not happening ?
+
+ANS:
+
+
+28/50
+
+________________________________________________________________________________________________________________________
+
+
+QUESTION 3:
+
+Bayes Theorem
+Suppose A and B are two independent events. Given that P(not A) = 0.2 and P(B)=0.3. Consider following unfilled contingency table and answer the questions
+
+What is the probability of B happening given that A has not happened? In other words, what is the value of P(B|not A)?
+
+ANS:
+
+3/10
+
+Feedback :
+Given that P(not A) = 0.2 . Suppose total no. of events of “not A” is x then x/50 is 0.2. Therefore n(not A) = x= 10.
+
+ 
+
+n(A)=50−10=40
+
+Since P(B)=0.3 we have n(B)=0.3×50=15 and n(not B)=50−15=35. From this we can partially complete the table:
+
+ 	A	Not A	 
+B	 	 	15
+Not B	 	 	35
+ 	40	10	50
+
+
+Next, we use the fact that A and B are independent. From the definition of independence
+
+P((not A) and B)=P(not A)×P(B)=0.2×0.3=0.06 
+
+Therefore n((not A) and B)=0.06×50= 3
+
+We find the rest of the values in the table by making sure that each row and column sums to its total.
+
+ 	A	Not A	 
+B	12	3	15
+Not B	28	7	35
+ 	40	10	50
+
+
+
+________________________________________________________________________________________________________________________
+
+
+

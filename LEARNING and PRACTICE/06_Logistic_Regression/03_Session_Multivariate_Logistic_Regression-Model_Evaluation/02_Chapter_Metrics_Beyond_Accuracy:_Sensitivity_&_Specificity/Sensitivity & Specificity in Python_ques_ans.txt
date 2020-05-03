@@ -1,0 +1,172 @@
+QUESTION 1:
+
+False Negatives
+What is the number of False Negatives for the model given below?
+
+Actual/Predicted	Not Churn	Churn
+Not Churn			80	40
+Churn				30	50
+
+
+ANS:
+
+30
+
+Feedback :
+The false negatives are the values which were actually 'Churn' but have been predicted as 'Not Churn'. Recall the labelling for the confusion matrix:
+
+Actual/Predicted	Not Churn	Churn
+Not Churn		True Negatives	False Positives
+Churn			False Negatives	True Positives
+ 
+
+Hence, you can see from the matrix above that the element in the 2nd row, 1st column gives you the value of 'False Negatives'. From the model given in the question, you can see that this number is equal to 30.
+
+
+
+___________________________________________________________________________________________________________________
+
+QUESTION 1:
+
+Specificity
+Specificity is defined as the fraction of the number of correctly predicted negatives and the total number of actual negatives, i.e.
+
+What is the approximate specificity of the following model?
+
+Actual/Predicted	Not Churn	Churn
+Not Churn	80	40
+Churn	30	50
+
+
+ANS:
+
+67%
+
+Feedback :
+Specificity is given as:
+
+Specificity = number of actual Noes correctly pred/ Total number of actual Nos
+	    = TN / TN + FP
+
+Here, TN (True Negatives) = 80
+
+and FP (False Positives) = 40
+
+Hence, you get:
+
+=80/(80+40)
+=66.67%
+≈67%
+
+
+
+___________________________________________________________________________________________________________________
+
+
+QUESTION 3:
+
+Evaluation Metrics
+Which among accuracy, sensitivity, and specificity is the highest for the model below?
+
+Actual/Predicted	Not Churn	Churn
+Not Churn			80	40
+Churn				30	50
+
+
+ANS:
+
+Specificity
+
+Feedback :
+The formula for the three metrics are given as:
+
+Accuracy =  Correctly Predicted/Total no of Lables
+ 
+
+Sensitivity = Number of actial Yesses correctly Predicted/Total number of actual yeses
+ 
+	    = TP/(TP +FN)
+
+
+Specificity = number of actual Noes correctly pred/ Total number of actual Nos
+	    = TN / TN + FP
+Hence, you get:
+
+Accuracy = 80 + 50/80+40+30+50
+=65%
+
+Sensitivity=50/30+50
+=62.5%
+
+Specificty=80/80+40
+≈67%
+
+As you can clearly see, Specificity (~67%) is the highest among the three.
+
+
+
+___________________________________________________________________________________________________________________
+
+
+QUESTION 4:
+
+In the code, you saw Rahim evaluate some other metrics as well. These were:
+
+ 
+
+False Postive Rate = FP/TN+FP
+
+Positive Predicted Value =TP/TP+FP
+
+Negative Predicted Value =TN/TN+FN
+
+ 
+As you can see, the 'False Positive Rate' is basically (1 - Specificity). Check the formula and the values in the code to verify.
+The positive predictive value is the number of positives correctly predicted by the total number of positives predicted. This is also known as 'Precision' which you'll learn more about soon.
+Similarly, the negative predictive value is the number of negatives correctly predicted by the total number of negatives predicted. There's no particular term for this as such.
+Calculate the given three metrics for the model below and identify which one is the largest among them.
+
+Actual/Predicted	Not Churn	Churn
+Not Churn			80	40
+Churn				30	50
+
+OPTIONS:
+
+False Positive Rate
+
+
+Positive Predictive Value
+
+
+Negative Predictive Value
+
+ANS:
+
+Negative Predictive Value
+
+Feedback :
+Correct! The values that you'll get are:
+
+False Postive Rate = FP/TN+FP =40/80+40
+≈33%
+
+You could have also used the specificity value you calculated in the last question (~67%) and simply calculated this as 1-Specificity = 1 - 0.67 = 33%
+
+Positive Predicted Value =TP/TP+FP=
+=50/50+40
+=55.55%
+≈56%
+
+Negative Predicted Value =TN/TN+FN
+=80/80+30
+≈72.72%
+≈73%
+
+As you can clearly see, the Negative Predictive Value is the highest of the three.
+
+
+
+___________________________________________________________________________________________________________________
+
+
+

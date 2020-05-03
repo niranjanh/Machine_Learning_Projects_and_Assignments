@@ -1,0 +1,37 @@
+Prediction vs Projection
+
+QUESTION 1:
+
+Projection
+Which of the following are true in case of projection?
+
+OPTIONS:
+
+A.
+Projection focuses on the identification of variables that are important in explaining the outcome, rather than how good the final outcome is
+
+B.
+While making a projection, it is assumed that the conditions in which the model was built continue to be the same
+
+C.
+It is better to get a simple model with lower accuracy than a complex model with high accuracy
+
+D.
+The accuracy of the final outcome is more important than the identification of the most important driver variables
+
+
+ANS:
+
+B.
+While making a projection, it is assumed that the conditions in which the model was built continue to be the same
+Feedback :
+Forecast assumes that conditions remain the same as they were when the model was built.
+
+
+D.
+The accuracy of the final outcome is more important than the identification of the most important driver variables
+Feedback :
+While making a projection, the aim is accuracy. Thus, a complex model containing a large number of variables, with high accuracy is more valuable than a simple model with lower accuracy.
+
+_______________________________________________________________________________________________________________________________
+

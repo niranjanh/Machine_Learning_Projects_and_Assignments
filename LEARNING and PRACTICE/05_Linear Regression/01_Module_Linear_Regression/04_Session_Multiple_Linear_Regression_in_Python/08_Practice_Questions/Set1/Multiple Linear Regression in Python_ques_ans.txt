@@ -1,0 +1,86 @@
+QUESTION 1:
+
+Residuals
+In regression analysis, which of the statements is true?
+
+OPTIONS:
+
+A.
+The mean of residuals is always equal to zero.
+ 
+
+B.
+The mean of residuals is less than zero at all times.
+ 
+
+C.
+The sum of residuals is more than zero at all times.
+ 
+
+D.
+The sum of residuals is always equal to zero.
+ 
+
+ANS:
+
+A.
+The mean of residuals is always equal to zero.
+ 
+Feedback :
+When a model gives you a “best fit” line, by design it is made such that the mean of all residuals is always zero. 
+
+
+B.
+The sum of residuals is always equal to zero.
+ 
+Feedback :
+When a model gives you a “best fit” line, by design it is made such that the sum of all residuals is always zero. 
+
+_______________________________________________________________________________________________________________________________
+
+
+
+
+QUESTION 2:
+
+Linear regression
+Which of the following is incorrect about linear regression?
+
+OPTIONS:
+
+A.
+Linear regression is very sensitive to data anomalies.
+ 
+
+B.
+Linear regression performs poorly when there are non-linear relationships.
+
+C.
+Linear regression guarantees interpolation but not extrapolation.
+
+D.
+Linear regression assumes that the data points are not independent (i.e. One observation might be affected by another).
+
+ANS:
+
+D.
+Linear regression assumes that the data points are not independent (i.e. One observation might be affected by another).
+
+Feedback :
+Linear regression assumes that the data points are independent.
+
+
+_______________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+

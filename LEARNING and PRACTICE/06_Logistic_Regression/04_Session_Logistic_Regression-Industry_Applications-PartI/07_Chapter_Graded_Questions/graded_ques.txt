@@ -1,0 +1,70 @@
+QUESTION 1:
+
+
+Logistic Regression
+What do you infer from the woe plot of the 'Grade' variable?
+
+
+ANS:
+
+As the loan grade varies from A to G, the woe values gradually decrease from +0.99 to -1.09
+Feedback :
+Woe values for each bucket are A=0.99, B=0.21, C=-0.20, D=-0.50, E=-0.77, F=-1.04 and G = -1.09. All the values starting from A to G gradually decrease from +0.99 to -1.09.
+
+
+_________________________________________________________________________________________________________________________________
+
+QUESTION 2:
+
+Logistic Regression
+Choose the correct option:
+
+OPOTIONS:
+
+A.
+Woe graph shows monotonic nature
+
+B.
+Woe graph doesn’t show monotonic nature
+
+C.
+All the grade categories show positive woe values
+
+D.
+All the grade categories show negative woe values
+
+ANS:
+
+A.
+Woe graph shows monotonic nature
+Feedback :
+If you create a plot out of woe value, you can clearly visualise a monotonic plot.
+Correct
+_________________________________________________________________________________________________________________________________
+
+
+
+QUESTION 3:
+
+Logistic Regression
+Information value of the 'Grade' variable is:
+
+
+
+ANS:
+
+0.34
+Feedback :
+Information Value for each bucket can be calculated as: 
+IVbucket = WOEbucket * (% good - % bad ) Total IV for grade variable 
+= IVbucket-1(A) + IVbucket-2(B) + IVbucket-3(C)+ IVbucket-4(D) + IVbucket-5(E)+ IVbucket-4(F) + IVbucket-5(G) 
+
+Total IV for grade variable = 0.18 + 0.01 + 0.01 + 0.04 + 0.05+0.04+0.01
+= 0.34
+
+
+_________________________________________________________________________________________________________________________________
+
+
+
+

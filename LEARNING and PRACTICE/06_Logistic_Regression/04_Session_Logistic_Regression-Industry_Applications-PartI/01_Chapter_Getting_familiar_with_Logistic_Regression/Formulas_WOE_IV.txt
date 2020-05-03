@@ -1,0 +1,12 @@
+WOE = ln(good in the bucket/Total Good)  − ln(bad in the bucket Total bad)
+
+WOE = ln(Percentage of Good in bucket/Percentage of bad in the bucket)
+
+
+IV = WOE ∗ ((Good in the bucket/Total Good)  - (Bad in bucket/Total bad))
+
+IV = WOE ∗ (Percentage of the goof in the bucket - Percentage of the bad in the bucket)
+
+It is an important indicator of predictive power.
+
+

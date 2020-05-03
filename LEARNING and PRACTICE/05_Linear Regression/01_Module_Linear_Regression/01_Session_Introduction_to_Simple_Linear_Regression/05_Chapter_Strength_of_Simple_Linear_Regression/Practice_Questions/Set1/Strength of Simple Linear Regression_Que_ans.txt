@@ -1,0 +1,27 @@
+Question 1:
+
+RSS - Residual Sum of Squares
+
+In the previous example of marketing spend (in lakhs) and sales amount (in crores), let’s assume you get the same data in different units — marketing spend (in lakhs) and sales amount (in dollars). Do you think there will be any change in the value of RSS due to change in units in this case (as compared to the value calculated in the Excel demonstration)?
+
+ANS:
+
+
+Yes, value of RSS would change because units are changing.
+Feedback :
+The RSS for any regression line is given by this expression: 
+∑(yi−yipred)^2. RSS is the sum of the squared difference between the actual and the predicted values, and its value will change if the units change since it has units of ​y2​. 
+For example, (140 rupees - 70 rupees)^2 = 4900, whereas (2 USD - 1 USD)^2 = 1. So value of RSS is different in both the cases because of different units.
+
+
+
+Question 2:
+
+RSS - Residual Sum of Squares
+Based on the property of RSS as mentioned in the previous question, do you think RSS is a good parameter to interpret how well the regression line represents the given data?
+
+You will get an explanation for this soon from Prof Dinesh.
+
+ANS:
+
+No

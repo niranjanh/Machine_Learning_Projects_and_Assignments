@@ -1,0 +1,87 @@
+QUESTION 1:
+
+
+Conditional Probability
+Consider the following equation in a Naive Bayes classification problem.
+
+P (x|c) = P (x1|c) . P (x2|c) .  ......  . P (xd|c)
+
+Here X is a feature vector where x1, x2 …. are attributes of that feature vector. C is a specific class. Which of the following is/are true w.r.t  the above information
+
+1. Above equation is only true if x1, x2...xd are conditionally independent 
+
+2. P(x∣c) simply means: “How likely is it to observe this particular pattern x given that it belongs to class c
+
+3. In the context of a classification problem P(x|c) is also termed as the likelihood 
+
+4. P(x|c) is also termed as the posterior probability
+
+
+ANS:
+
+Option 1,2 and 3
+
+_______________________________________________________________________________________________________________
+
+
+QUESTION 2:
+
+Likelihood
+Bayes theorem is defined as  P(C_{i}/X) = \frac{P(X/C_{i}) P(C_{i})}{P(X)}
+
+The likelihood , in the context of a classification problem, can be interpreted as
+
+
+ANS
+
+What is the probability of observing a given feature vector knowing that it belongs to a class C
+_______________________________________________________________________________________________________________
+
+
+QUESTION 3:
+
+Prior
+Bayes theorem is defined as  P(C_{i}/X) = \frac{P(X/C_{i}) P(C_{i})}{P(X)}
+
+The prior probability, in the context of a classification problem, can be interpreted as
+
+ANS
+
+What is the probability of a class C in the sample being considered
+
+_______________________________________________________________________________________________________________
+
+
+QUESTION 4:
+
+Posterior Probability
+Bayes theorem is defined as  P(C_{i}/X) = \frac{P(X/C_{i}) P(C_{i})}{P(X)}
+
+The posterior probability, in the context of a classification problem, can be interpreted as
+
+ANS
+
+
+What is the probability that a particular object belongs to class C given its observed feature values
+
+_______________________________________________________________________________________________________________
+
+
+QUESTION 5:
+
+Naive Bayes Classification
+
+Which of the following is/are true w.r.t  the assumptions made in Naive Bayes Classification?
+
+1. All the rows of  a collection of data are i.i.d, (independent and identically distributed)i.e., all data points  are independent of each other and are drawn from the similar distribution.
+
+2. All features are conditionally independent.
+
+3. Even if samples are not a sequence of independent, identically distributed (IID) random distribution , they can be classified using Naive Bayes Classification
+
+4. Conditional independence of the features of a feature vector is not required
+
+ANS
+
+Option 1 and 2
+

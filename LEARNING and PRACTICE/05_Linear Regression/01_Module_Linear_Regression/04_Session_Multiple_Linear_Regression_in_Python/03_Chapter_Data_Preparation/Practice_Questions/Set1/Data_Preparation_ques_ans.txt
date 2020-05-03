@@ -1,0 +1,41 @@
+QUESTION 1:
+
+
+Mapping Variables
+After you performed binary encoding of the variable ‘MaritalStatus’ with, ‘Married’ corresponding to 1 and ‘Unmarried’ corresponding to 0, you found out that the mean of the variable ‘MaritalStatus’ was 0.6. What does this statement indicate?
+
+
+
+ANS:
+
+60% of the people on the list are married.
+
+Feedback :
+Notice that when you perform a binary encoding, the only values present in the variable are 0 and 1. So if you calculate the mean, it is only the 1s which will contribute towards it. Since the value '1' corresponds to 'Married', a mean of 0.6 indicates that 60% of the people in the list are married.
+
+
+_______________________________________________________________________________________________________________________________
+
+
+
+
+QUESTION 2:
+
+Encoding Variables
+Suppose you performed encoding with the variable ‘BloodGroup’ having four levels, ‘A’, ‘B’, ‘AB’, and ‘O’. To perform the encoding, you wish to drop two of the levels, ‘AB’ and ‘O’. Suggest a suitable encoding process that will now represent the four levels.
+
+ANS:
+
+I can have statuses like
+10 for A,
+01 for B, 
+11 for AB
+00 for O
+Hence I need two dummy variables
+A      B
+1      0  : A blood group
+0     1  :  B blood group
+1     1 :   AB blood group
+0     0  : O blood group
+
+_______________________________________________________________________________________________________________________________

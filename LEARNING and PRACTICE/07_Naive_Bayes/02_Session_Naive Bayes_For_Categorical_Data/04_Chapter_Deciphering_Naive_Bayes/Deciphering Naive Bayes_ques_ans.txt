@@ -1,0 +1,121 @@
+Navie-Bayes Probability Notes and Practice Questions:
+
+Again, Bayes theorem is defined as: P(C_{i}/X) = \frac{P(X/C_{i}) P(C_{i})}{P(X)}
+
+P(C_{i}) is known as the prior probability. It is the probability of an event occurring before the collection of new data.  Prior plays an important role while classifying, when using Naïve Bayes, as it highly influences the class of the new test point.
+P(X/C_{i}) represents the likelihood function. It tells the likelihood of a data point occurring in a category. The conditional independence assumption is leveraged while computing the likelihood probability.
+The effect of the denominator P(x) is not incorporated while calculating probabilities as it is the same for both the classes and hence, can be ignored without affecting the final outcome.
+P(C_{i}/X) is called the posterior probability, which is finally compared for the classes, and the test point is assigned the class whose Posterior probability is greater.
+Prior, Posterior and Likelihood
+Let’s understand the terminology of Bayes theorem.
+
+ 
+
+You have been using 3 terms: P(Class = edible / poisonous), P(X | Class) and P(Class | X). Bayesian classification is based on the principle that ‘you combine your prior knowledge or beliefs about a population with the case specific information to get the actual (posterior) probability’.
+
+P(Class = edible) or P(Class = poisonous) is called the prior probability
+This incorporates our ‘prior beliefs’ before you collect specific information. If 90% of mushrooms are edible, then the prior probability is 0.90. Prior gets multiplied with the likelihood to give the posterior. In many cases, the prior has a tremendous effect on the classification. If the prior is neutral (50% are edible), then the likelihood may largely decide the outcome.
+
+P(X|Class) is the likelihood
+After agreeing upon the prior, you collect new, case-specific data (like plucking mushrooms randomly from a farm and observing the cap colours). Likelihood updates our prior beliefs with the new information. If you find a CONVEX mushroom, then you’d want to know how likely you were to find a convex one if you had only plucked edible mushrooms.
+
+ 
+
+If  P(CONVEX| edible) is high, say 80%, implying that there was an 80% chance of getting a convex mushroom if you only took from edible mushrooms, this will reflect in increased chances of the mushroom being edible.
+
+ 
+
+If the likelihood is neutral (e.g. 50%), then the prior probability may largely decide the outcome. If the prior is way too powerful, then likelihood often barely affects the result.
+
+P(Class = edible | X) is the posterior probability
+It is the outcome which combines prior beliefs and case-specific information. It is a balanced outcome of the prior and the likelihood.
+
+ 
+
+If Zimbabwe takes 3 Australian wickets in the first over in a world cup, would you predict Australia to lose? Probably not, because the prior odds are way too strong in favour of Australia. They’ve never lost to Zimbabwe in a world cup! The likelihood, though it may be high, gets balanced by the prior odds (Australia’s prior odds may even be 99%!) to give you the correct posterior.
+
+___________________________________________________________________________________________________________________________________
+
+Comprehension - Naive Bayes with Multiple Features:
+
+Please use the table data to answer the questions below:
+
+Table 3: Mushroom Dataset
+
+S.No	Type of Mushroom	Cap.shape	Cap.surface
+1.	Poisonous		Convex		Scaly
+2.	Edible			Convex		Scaly
+3.	Poisonous		Convex		Smooth
+4.	Edible			Convex		Smooth
+5.	Edible			Convex		Fibrous
+6.	Poisonous		Convex		Scaly
+7.	Edible			Bell		Scaly
+8.	Edible			Bell		Scaly
+9.	Edible			Convex		Scaly
+10.	Poisonous		Convex		Scaly
+11.	Edible			Flat 		Scaly
+12.	Edible			Bell		Smooth
+
+
+___________________________________________________________________________________________________________________________________
+
+QUESTION 1:
+
+Probability calculation
+In the table above, the prior probability is higher for a mushroom being:
+
+OPTIONS:
+
+A. Edible
+
+B. Poisonous
+
+ANS:
+
+ANS:
+
+A. Edible
+
+___________________________________________________________________________________________________________________________________
+
+QUESTION 2:
+
+Likelihood calculation
+Say you consider a (CONVEX, SCALY) mushroom. The likelihood is higher for it being:
+
+ANS:
+
+Poisonous
+Feedback :
+Likelihood is P(X = (CONVEX, SCALY) | Class). Class = edible: P(CONVEX | Edible).P(SCALY | EDIBLE) = (4/8)(5/8) = 20/64 = 31.25 % Class = poisonous: P(CONVEX | poisonous).P(SCALY | poisonous) = (4/4)(3/4) = 75 %
+
+ 
+___________________________________________________________________________________________________________________________________
+
+QUESTION 3:
+
+Likelihood Calculation
+The values of P(X|Class). P(Class) where X = (CONVEX, SCALY) for both classes (edible and poisonous) are respectively:
+
+ANS:
+
+Edible = 20.8 %; Poisonous = 25.0 %
+Feedback :
+Edible: P(CONVEX | Edible). P(SCALY | EDIBLE). P(Edible) = (4/8)(5/8)(8/12) = 20.8% , Poisonous: P(CONVEX | poisonous). P(SCALY | poisonous). P(Poisonous) = (4/4)(3/4)(4/12) = 25%
+
+ 
+___________________________________________________________________________________________________________________________________
+
+QUESTION 1:
+
+Choose the correct statement
+For the (CONVEX, SCALY) mushroom:
+
+ANS:
+
+The prior is in favor of edible; posterior in favor of poisonous
+Feedback :
+Prior is 8/12 and 4/12 for edible and poisonous respectively; posterior is 20.8% and 25%.
+
+ 
+
